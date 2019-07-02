@@ -2,7 +2,7 @@
     <img src="https://automat.berlin/images/logo-automat.svg" alt="Automat">
 </div>
 
-[![Release v1.0](https://img.shields.io/badge/Release-v1.0-brightgreen.svg)](releases/)
+[![Release v1.0](https://img.shields.io/badge/Release-v1.0-brightgreen.svg)](https://github.com/automat-berlin/afone/releases/)
 ![Xcode 10.2+](https://img.shields.io/badge/Xcode-10.2%2B-blue.svg)
 ![Swift 5.0+](https://img.shields.io/badge/Swift-5.0%2B-orange.svg)
 ![iOS 12.1+](https://img.shields.io/badge/iOS-12.1%2B-blue.svg)
