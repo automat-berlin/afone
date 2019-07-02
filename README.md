@@ -10,7 +10,7 @@
 [![License MIT](https://img.shields.io/badge/License-MIT-lightgray.svg)](https://github.com/automat-berlin/afone/blob/master/LICENSE)
 [![Twitter AutomatBerlin](https://img.shields.io/badge/Twitter-@AutomatBerlin-blue.svg)](https://twitter.com/AutomatBerlin)
 
-Afone is the reference implementation for SIP Telephony on iOS that can be used on different SIP stacks with no effort. It comes with an easily extensible adapters concept that encapsulates all details of various providers.
+//afone is the reference implementation for SIP Telephony on iOS that can be used on different SIP stacks with no effort. It comes with an easily extensible adapters concept that encapsulates all details of various providers.
 
 - [Requirements](#requirements)
 - [Features](#features)
@@ -62,7 +62,7 @@ Enter a phone number and make a call. You can tap on delete to revert your input
 
 <img src="Documentation/Screenshots/call.png" alt="Call Screen" width="414">
 
-Afone’s call interface supports all standard features. While making a call you can mute it, put it on the speaker, switch to a video call and switch the device camera. You can also tap on the **Keypad** button to enter DTMF signals.
+//afone’s call interface supports all standard features. While making a call you can mute it, put it on the speaker, switch to a video call and switch the device camera. You can also tap on the **Keypad** button to enter DTMF signals.
 
 <img src="Documentation/Screenshots/settings.png" alt="Adapter Settings" width="414">
 
@@ -72,7 +72,7 @@ In the **Settings** screen you can configure audio & video codecs, SRTP. You can
 
 ### Dependencies
 
-Afone uses [CocoaPods](https://cocoapods.org) as its dependency manager. For usage and installation instructions, visit their website. Before you open & build the project in Xcode, you have to install all dependencies first. Make sure CocoaPods is installed on your machine, then install all required project dependencies:
+//afone uses [CocoaPods](https://cocoapods.org) as its dependency manager. For usage and installation instructions, visit their website. Before you open & build the project in Xcode, you have to install all dependencies first. Make sure CocoaPods is installed on your machine, then install all required project dependencies:
 
 ```
 pod install
@@ -80,7 +80,7 @@ pod install
 
 ### Build & Run
 
-After you have installed all dependencies, just open the Xcode workspace. Select the desired simulator and run the project. If you want to run Afone on a device, you’ll have to configure signing in the Xcode Target preferences. Visit the official Apple documentation for more information about device provisioning.
+After you have installed all dependencies, just open the Xcode workspace. Select the desired simulator and run the project. If you want to run //afone on a device, you’ll have to configure signing in the Xcode Target preferences. Visit the official Apple documentation for more information about device provisioning.
 
 ## Customization
 
@@ -210,7 +210,7 @@ You can customize colors and other defaults of the application in `Constants`. T
 
 ### Why do you have dependencies? I thought a good library shouldn’t have dependencies?
 
-While it is technically correct that a good library should stand for itself without requiring other dependencies, Afone isn’t a library, but a complete softphone reference implementation with a full-fledged application architecture, dependency management, custom view components, and much more. Most of this functionality is a core part of the main repository, but there is no point in reinventing the wheel and writing the _n_-th implementation of a logging library (where already great implementations exist). If you think the project should further minimize its dependencies, we welcome your contribution and a pull request.
+While it is technically correct that a good library should stand for itself without requiring other dependencies, //afone isn’t a library, but a complete softphone reference implementation with a full-fledged application architecture, dependency management, custom view components, and much more. Most of this functionality is a core part of the main repository, but there is no point in reinventing the wheel and writing the _n_-th implementation of a logging library (where already great implementations exist). If you think the project should further minimize its dependencies, we welcome your contribution and a pull request.
 
 ## Known Issues
 
@@ -222,7 +222,7 @@ We welcome any contributions. Contact us if you have any questions.
 
 ## Contact
 
-Afone is owned and maintained by [Automat Berlin GmbH](https://automat.berlin/).
+//afone is owned and maintained by [Automat Berlin GmbH](https://automat.berlin/).
 
 ## Acknowledgements
 
@@ -230,4 +230,4 @@ Elevator Music by Kevin Macleod distributed under Attribution 3.0 Unported (CC B
 
 ## License
 
-Afone is released under the MIT license. See [LICENSE](https://github.com/automat-berlin/afone/blob/master/LICENSE) for details.
+//afone is released under the MIT license. See [LICENSE](https://github.com/automat-berlin/afone/blob/master/LICENSE) for details.
