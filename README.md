@@ -2,12 +2,12 @@
     <img src="https://automat.berlin/images/logo-automat.svg" alt="Automat">
 </div>
 
-[![Release v1.0](https://img.shields.io/badge/Release-v1.0-brightgreen.svg)](https://github.com/TODO/TODO/releases/)
+[![Release v1.0](https://img.shields.io/badge/Release-v1.0-brightgreen.svg)](https://github.com/automat-berlin/afone/releases/)
 ![Xcode 10.2+](https://img.shields.io/badge/Xcode-10.2%2B-blue.svg)
 ![Swift 5.0+](https://img.shields.io/badge/Swift-5.0%2B-orange.svg)
 ![iOS 12.1+](https://img.shields.io/badge/iOS-12.1%2B-blue.svg)
 [![CocoaPods Compatible](https://img.shields.io/badge/CocoaPods-compatible-green.svg)](https://cocoapods.org/)
-[![License MIT](https://img.shields.io/badge/License-MIT-lightgray.svg)](https://github.com/TODO/TODO/blob/master/LICENSE)
+[![License MIT](https://img.shields.io/badge/License-MIT-lightgray.svg)](https://github.com/automat-berlin/afone/blob/master/LICENSE)
 [![Twitter AutomatBerlin](https://img.shields.io/badge/Twitter-@AutomatBerlin-blue.svg)](https://twitter.com/AutomatBerlin)
 
 Afone is the reference implementation for SIP Telephony on iOS that can be used on different SIP stacks with no effort. It comes with an easily extensible adapters concept that encapsulates all details of various providers.
@@ -230,4 +230,4 @@ Elevator Music by Kevin Macleod distributed under Attribution 3.0 Unported (CC B
 
 ## License
 
-Afone is released under the MIT license. See [LICENSE](https://github.com/TODO/TODO/blob/master/LICENSE) for details.
+Afone is released under the MIT license. See [LICENSE](https://github.com/automat-berlin/afone/blob/master/LICENSE) for details.
