@@ -1,0 +1,54 @@
+
+/* Class = "UITabBarItem"; title = "Login"; ObjectID = "0uz-qK-Ilg"; */
+"0uz-qK-Ilg.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "1hj-Et-sEq"; */
+"1hj-Et-sEq.normalTitle" = "Login";
+
+/* Class = "UINavigationItem"; title = "Advanced"; ObjectID = "9Mm-h9-w11"; */
+"9Mm-h9-w11.title" = "Advanced";
+
+/* Class = "UITabBarItem"; title = "Dialer"; ObjectID = "Mns-j8-Wiy"; */
+"Mns-j8-Wiy.title" = "Dialer";
+
+/* Class = "UIButton"; normalTitle = "Advanced"; ObjectID = "Rxy-mM-4Rf"; */
+"Rxy-mM-4Rf.normalTitle" = "Advanced";
+
+/* Class = "UITextField"; placeholder = "Login"; ObjectID = "Tg6-7M-4uJ"; */
+"Tg6-7M-4uJ.placeholder" = "Login";
+
+/* Class = "UILabel"; text = "Version"; ObjectID = "Tin-Qp-oa1"; */
+"Tin-Qp-oa1.text" = "Version";
+
+/* Class = "UIViewController"; title = "About"; ObjectID = "Wmg-20-gLW"; */
+"Wmg-20-gLW.title" = "About";
+
+/* Class = "UITextField"; placeholder = "SIP Server"; ObjectID = "ctG-7M-S6t"; */
+"ctG-7M-S6t.placeholder" = "SIP Server";
+
+/* Class = "UILabel"; text = "Copyright"; ObjectID = "e88-Cq-gov"; */
+"e88-Cq-gov.text" = "Copyright";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "hvZ-68-HIf"; */
+"hvZ-68-HIf.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "website"; ObjectID = "iIJ-sP-Efj"; */
+"iIJ-sP-Efj.text" = "website";
+
+/* Class = "UINavigationController"; title = "Settings"; ObjectID = "oeg-sW-S5b"; */
+"oeg-sW-S5b.title" = "Settings";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "sen-AC-ov6"; */
+"sen-AC-ov6.title" = "Settings";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "tUv-f5-sL9"; */
+"tUv-f5-sL9.title" = "Item";
+
+/* Class = "UIViewController"; title = "Settings"; ObjectID = "wQ4-vb-fFl"; */
+"wQ4-vb-fFl.title" = "Settings";
+
+/* Class = "UIViewController"; title = "Advanced"; ObjectID = "yC3-Qa-ppM"; */
+"yC3-Qa-ppM.title" = "Advanced";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "zxG-xT-G0O"; */
+"zxG-xT-G0O.title" = "Settings";

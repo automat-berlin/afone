@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DialerView" customModule="Automat" customModuleProvider="target">
+            <connections>
+                <outlet property="actionsStackView" destination="qIb-6a-WaJ" id="LUI-ra-BpH"/>
+                <outlet property="callButton" destination="xmh-E3-Eyu" id="lxw-Td-OhP"/>
+                <outlet property="callButtonHeightConstraint" destination="VZM-cX-QyP" id="zvh-kF-Bcj"/>
+                <outlet property="callButtonWidthConstraint" destination="BDF-HS-AKd" id="RzC-GZ-aZj"/>
+                <outlet property="deleteButton" destination="ZiJ-FZ-xh0" id="dl4-0f-Cth"/>
+                <outlet property="deleteButtonTopConstraint" destination="4ek-Dt-s0h" id="QsD-94-Hu7"/>
+                <outlet property="numberTextView" destination="v2Y-4V-rhN" id="S6w-h7-t3I"/>
+                <outlet property="numpadView" destination="1oR-7w-tRX" id="0Ch-78-9RJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="556"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiJ-FZ-xh0" customClass="ABButton" customModule="Automat" customModuleProvider="target">
+                    <rect key="frame" x="311" y="36" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="9pr-3N-r2k"/>
+                        <constraint firstAttribute="width" constant="32" id="IkT-4Q-ISp"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="backspace"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oR-7w-tRX" customClass="NumpadView" customModule="Automat" customModuleProvider="target">
+                    <rect key="frame" x="47.5" y="112" width="280" height="336"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="336" id="U2Q-i7-k2t"/>
+                        <constraint firstAttribute="width" constant="280" placeholder="YES" id="p8h-NY-c55"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="qIb-6a-WaJ">
+                    <rect key="frame" x="151.5" y="464" width="72" height="72"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmh-E3-Eyu" customClass="ABButton" customModule="Automat" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="72" id="BDF-HS-AKd"/>
+                                <constraint firstAttribute="height" constant="72" id="VZM-cX-QyP"/>
+                            </constraints>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="buttonCall"/>
+                            <connections>
+                                <action selector="callAction:" destination="-1" eventType="touchUpInside" id="DEf-L2-K9T"/>
+                                <action selector="feedbackAction:" destination="-1" eventType="touchDown" id="LlZ-oK-77T"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" text="+44" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v2Y-4V-rhN" customClass="DialerTextView" customModule="Automat" customModuleProvider="target">
+                    <rect key="frame" x="48" y="21.5" width="263" height="61.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="38"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                </textView>
+            </subviews>
+            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="v2Y-4V-rhN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="48" id="0oe-7k-im1"/>
+                <constraint firstItem="v2Y-4V-rhN" firstAttribute="centerY" secondItem="ZiJ-FZ-xh0" secondAttribute="centerY" id="2f6-yO-jdb"/>
+                <constraint firstItem="ZiJ-FZ-xh0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="36" id="4ek-Dt-s0h"/>
+                <constraint firstItem="v2Y-4V-rhN" firstAttribute="trailing" secondItem="ZiJ-FZ-xh0" secondAttribute="leading" id="8Qd-Yy-EHN"/>
+                <constraint firstItem="qIb-6a-WaJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9b4-bx-sr7"/>
+                <constraint firstAttribute="bottom" secondItem="qIb-6a-WaJ" secondAttribute="bottom" constant="20" id="aUF-if-Lh7"/>
+                <constraint firstItem="1oR-7w-tRX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" id="k8p-Rw-UUz"/>
+                <constraint firstItem="1oR-7w-tRX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mGX-b4-b8z"/>
+                <constraint firstAttribute="trailing" secondItem="ZiJ-FZ-xh0" secondAttribute="trailing" constant="32" id="v5l-1g-cjw"/>
+                <constraint firstItem="qIb-6a-WaJ" firstAttribute="top" secondItem="1oR-7w-tRX" secondAttribute="bottom" constant="16" id="wkR-Ki-rnU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="-3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backspace" width="24" height="24"/>
+        <image name="buttonCall" width="72" height="72"/>
+    </resources>
+</document>

@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Mute"; ObjectID = "5c4-d2-kNA"; */
+"5c4-d2-kNA.text" = "Mute";
+
+/* Class = "UILabel"; text = "Keypad"; ObjectID = "6cF-iJ-bjv"; */
+"6cF-iJ-bjv.text" = "Keypad";
+
+/* Class = "UILabel"; text = "Speaker"; ObjectID = "GWY-5K-dSk"; */
+"GWY-5K-dSk.text" = "Speaker";
+
+/* Class = "UILabel"; text = "Video"; ObjectID = "IXd-bJ-iQK"; */
+"IXd-bJ-iQK.text" = "Video";
+
+/* Class = "UILabel"; text = "12345"; ObjectID = "J6q-Vs-Tcc"; */
+"J6q-Vs-Tcc.text" = "12345";
+
+/* Class = "UILabel"; text = "Switch"; ObjectID = "K5a-ZM-Gar"; */
+"K5a-ZM-Gar.text" = "Switch";
+
+/* Class = "UILabel"; text = "calling ..."; ObjectID = "Pcp-hu-Hc4"; */
+"Pcp-hu-Hc4.text" = "calling ...";
+
+/* Class = "UILabel"; text = "John Doe"; ObjectID = "edL-z8-dxC"; */
+"edL-z8-dxC.text" = "John Doe";
+
+/* Class = "UIButton"; normalTitle = "Hide"; ObjectID = "zfK-Xg-w6y"; */
+"zfK-Xg-w6y.normalTitle" = "Hide";

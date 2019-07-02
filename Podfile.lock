@@ -1,0 +1,22 @@
+PODS:
+  - CocoaLumberjack/Core (3.5.3)
+  - CocoaLumberjack/Swift (3.5.3):
+    - CocoaLumberjack/Core
+  - CodableKeychain (1.0.0)
+
+DEPENDENCIES:
+  - CocoaLumberjack/Swift
+  - CodableKeychain
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaLumberjack
+    - CodableKeychain
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  CodableKeychain: f15b1c893b8a7883b4d82e364c2d8e0bb8358fe1
+
+PODFILE CHECKSUM: 6c8ec1e5e3d47e8766636747c05fcab5cd8d1fe4
+
+COCOAPODS: 1.7.1

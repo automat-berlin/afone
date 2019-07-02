@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CallView">
+            <connections>
+                <outlet property="callStatusLabel" destination="Pcp-hu-Hc4" id="okH-Nv-I17"/>
+                <outlet property="contactNameLabel" destination="edL-z8-dxC" id="rUh-rX-ETm"/>
+                <outlet property="dtmfInputLabel" destination="J6q-Vs-Tcc" id="Bmu-9M-RPL"/>
+                <outlet property="durationLabel" destination="Vv5-Cg-eZw" id="MLs-re-nwZ"/>
+                <outlet property="hangupButton" destination="xV0-hI-6wv" id="Gkt-yb-FNs"/>
+                <outlet property="hideButton" destination="zfK-Xg-w6y" id="ru6-WN-e3F"/>
+                <outlet property="holdButton" destination="hdU-Uf-wbg" id="I8d-bH-Z3A"/>
+                <outlet property="muteButton" destination="x0d-cE-KAP" id="dDg-Dg-kw0"/>
+                <outlet property="muteLabel" destination="5c4-d2-kNA" id="oUt-fN-toF"/>
+                <outlet property="numpadButton" destination="EeD-5w-oEt" id="rRO-dN-SgK"/>
+                <outlet property="numpadLabel" destination="6cF-iJ-bjv" id="JPO-7q-eUv"/>
+                <outlet property="numpadView" destination="dqo-bQ-VPE" id="kk5-WV-gWf"/>
+                <outlet property="speakerButton" destination="KmL-tB-2sq" id="rYU-I3-uXl"/>
+                <outlet property="speakerLabel" destination="GWY-5K-dSk" id="wxh-N2-Cu1"/>
+                <outlet property="standardButtonsStackView" destination="GIY-bC-vLv" id="EKf-VR-ghY"/>
+                <outlet property="switchButton" destination="Uez-bh-4a9" id="GvG-42-Pcl"/>
+                <outlet property="videoButton" destination="Wjy-wY-0Uf" id="nt0-si-ESN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OnR-Hh-cGP">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edL-z8-dxC">
+                    <rect key="frame" x="8" y="62" width="359" height="43"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="36"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" textAlignment="center" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6q-Vs-Tcc">
+                    <rect key="frame" x="8" y="62" width="359" height="43"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="36"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="calling ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcp-hu-Hc4">
+                    <rect key="frame" x="8" y="113" width="359" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xV0-hI-6wv" userLabel="Hangup Button">
+                    <rect key="frame" x="151.5" y="551" width="72" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="X66-s4-vCF"/>
+                        <constraint firstAttribute="width" secondItem="xV0-hI-6wv" secondAttribute="height" multiplier="1:1" id="aSx-4f-UJC"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="hangup"/>
+                    <connections>
+                        <action selector="cancelCallActionWithButton:" destination="-1" eventType="touchUpInside" id="9cf-UK-c0b"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfK-Xg-w6y">
+                    <rect key="frame" x="272.5" y="570" width="38" height="34"/>
+                    <state key="normal" title="Hide"/>
+                    <connections>
+                        <action selector="numpadHideAction" destination="-1" eventType="touchUpInside" id="Een-zg-Jg5"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GIY-bC-vLv">
+                    <rect key="frame" x="47.5" y="310" width="280" height="221"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="4Qn-kj-3PR">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="100.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="laI-Rj-BZ1">
+                                    <rect key="frame" x="0.0" y="0.0" width="72" height="100.5"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0d-cE-KAP">
+                                            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="x0d-cE-KAP" secondAttribute="height" multiplier="1:1" id="3w9-He-Bpk"/>
+                                                <constraint firstAttribute="height" constant="72" id="oLj-BT-Jzr"/>
+                                            </constraints>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <state key="normal" image="mute"/>
+                                            <connections>
+                                                <action selector="muteCallActionWithButton:" destination="-1" eventType="touchUpInside" id="G7G-O3-cAa"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5c4-d2-kNA">
+                                            <rect key="frame" x="16.5" y="80" width="39" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="brT-00-rZh">
+                                    <rect key="frame" x="104" y="0.0" width="72" height="100.5"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeD-5w-oEt">
+                                            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="72" id="N0K-rz-wAB"/>
+                                                <constraint firstAttribute="width" secondItem="EeD-5w-oEt" secondAttribute="height" multiplier="1:1" id="OiH-Sd-yRS"/>
+                                            </constraints>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <state key="normal" image="numpad"/>
+                                            <connections>
+                                                <action selector="numpadShowAction" destination="-1" eventType="touchUpInside" id="cbf-J3-aMr"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keypad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cF-iJ-bjv">
+                                            <rect key="frame" x="7.5" y="80" width="57.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2ge-gA-0U2">
+                                    <rect key="frame" x="208" y="0.0" width="72" height="100.5"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmL-tB-2sq">
+                                            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="KmL-tB-2sq" secondAttribute="height" multiplier="1:1" id="8hu-dE-QIm"/>
+                                                <constraint firstAttribute="height" constant="72" id="TaN-9O-0Ky"/>
+                                            </constraints>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <state key="normal" image="speaker"/>
+                                            <connections>
+                                                <action selector="speakerActionWithButton:" destination="-1" eventType="touchUpInside" id="fPD-TC-n9c"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speaker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWY-5K-dSk">
+                                            <rect key="frame" x="4.5" y="80" width="63" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="L01-NQ-wJd">
+                            <rect key="frame" x="0.0" y="120.5" width="280" height="100.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rH3-Ca-phh">
+                                    <rect key="frame" x="0.0" y="0.0" width="72" height="100.5"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjy-wY-0Uf">
+                                            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                            <state key="normal" image="video"/>
+                                            <connections>
+                                                <action selector="videoToggleActionWithButton:" destination="-1" eventType="touchUpInside" id="coK-3Q-7Kb"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXd-bJ-iQK">
+                                            <rect key="frame" x="14" y="80" width="44" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1Id-tw-r9m">
+                                    <rect key="frame" x="104" y="0.0" width="72" height="100.5"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uez-bh-4a9">
+                                            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                            <state key="normal" image="camera"/>
+                                            <connections>
+                                                <action selector="switchToggleActionWithButton:" destination="-1" eventType="touchUpInside" id="Nea-0a-HZW"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5a-ZM-Gar">
+                                            <rect key="frame" x="10.5" y="80" width="51.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M1o-Jp-9fo">
+                                    <rect key="frame" x="208" y="0.0" width="72" height="100.5"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdU-Uf-wbg">
+                                            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                            <state key="normal" image="hold"/>
+                                            <connections>
+                                                <action selector="holdCallActionWithButton:" destination="-1" eventType="touchUpInside" id="7o4-8I-3o5"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2b-QW-4TP">
+                                            <rect key="frame" x="18" y="80" width="36" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqo-bQ-VPE" customClass="NumpadView" customModule="Automat" customModuleProvider="target">
+                    <rect key="frame" x="47.5" y="191" width="280" height="344"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" placeholder="YES" id="ofb-AN-Kvd"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vv5-Cg-eZw">
+                    <rect key="frame" x="168" y="139.5" width="39" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="edL-z8-dxC" firstAttribute="centerX" secondItem="OnR-Hh-cGP" secondAttribute="centerX" id="2rJ-ef-dP2"/>
+                <constraint firstItem="edL-z8-dxC" firstAttribute="leading" secondItem="OnR-Hh-cGP" secondAttribute="leading" constant="8" id="3c9-Tk-key"/>
+                <constraint firstItem="dqo-bQ-VPE" firstAttribute="top" secondItem="Pcp-hu-Hc4" secondAttribute="bottom" constant="56.5" placeholder="YES" id="4Fw-lK-0ef"/>
+                <constraint firstItem="Pcp-hu-Hc4" firstAttribute="leading" secondItem="edL-z8-dxC" secondAttribute="leading" id="5O8-3R-xEV"/>
+                <constraint firstAttribute="trailing" secondItem="zfK-Xg-w6y" secondAttribute="trailing" constant="64.5" id="9wg-EV-KtL"/>
+                <constraint firstItem="Vv5-Cg-eZw" firstAttribute="top" secondItem="Pcp-hu-Hc4" secondAttribute="bottom" constant="5" id="Bcc-MF-w1x"/>
+                <constraint firstItem="GIY-bC-vLv" firstAttribute="centerX" secondItem="OnR-Hh-cGP" secondAttribute="centerX" id="J8B-JB-fYB"/>
+                <constraint firstItem="J6q-Vs-Tcc" firstAttribute="top" secondItem="edL-z8-dxC" secondAttribute="top" id="JVE-4M-okg"/>
+                <constraint firstItem="dqo-bQ-VPE" firstAttribute="centerX" secondItem="OnR-Hh-cGP" secondAttribute="centerX" id="Kh0-6Y-E2s"/>
+                <constraint firstAttribute="bottom" secondItem="xV0-hI-6wv" secondAttribute="bottom" constant="44" id="MLV-tR-2c8"/>
+                <constraint firstItem="xV0-hI-6wv" firstAttribute="top" secondItem="GIY-bC-vLv" secondAttribute="bottom" constant="20" id="Uxv-pq-W2k"/>
+                <constraint firstItem="J6q-Vs-Tcc" firstAttribute="leading" secondItem="edL-z8-dxC" secondAttribute="leading" id="cq5-Zc-DQN"/>
+                <constraint firstItem="Pcp-hu-Hc4" firstAttribute="trailing" secondItem="edL-z8-dxC" secondAttribute="trailing" id="d6f-s4-DQp"/>
+                <constraint firstItem="xV0-hI-6wv" firstAttribute="centerX" secondItem="OnR-Hh-cGP" secondAttribute="centerX" id="e2J-p5-JAY"/>
+                <constraint firstItem="Pcp-hu-Hc4" firstAttribute="top" secondItem="edL-z8-dxC" secondAttribute="bottom" constant="8" id="eqU-UC-lsn"/>
+                <constraint firstItem="zfK-Xg-w6y" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xV0-hI-6wv" secondAttribute="trailing" constant="8" symbolic="YES" id="ksP-Ro-rB4"/>
+                <constraint firstItem="xV0-hI-6wv" firstAttribute="top" secondItem="dqo-bQ-VPE" secondAttribute="bottom" constant="16" id="qi6-oe-jqZ"/>
+                <constraint firstItem="Vv5-Cg-eZw" firstAttribute="centerX" secondItem="OnR-Hh-cGP" secondAttribute="centerX" id="toU-Kx-QG8"/>
+                <constraint firstItem="J6q-Vs-Tcc" firstAttribute="top" secondItem="OnR-Hh-cGP" secondAttribute="top" constant="62" id="u4x-89-4Rl"/>
+                <constraint firstItem="zfK-Xg-w6y" firstAttribute="centerY" secondItem="xV0-hI-6wv" secondAttribute="centerY" id="vf9-8N-dME"/>
+                <constraint firstItem="J6q-Vs-Tcc" firstAttribute="trailing" secondItem="edL-z8-dxC" secondAttribute="trailing" id="ze6-z0-eKf"/>
+            </constraints>
+            <point key="canvasLocation" x="-51.5" y="141.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera" width="72" height="72"/>
+        <image name="hangup" width="72" height="72"/>
+        <image name="hold" width="72" height="72"/>
+        <image name="mute" width="72" height="72"/>
+        <image name="numpad" width="72" height="72"/>
+        <image name="speaker" width="72" height="72"/>
+        <image name="video" width="72" height="72"/>
+    </resources>
+</document>

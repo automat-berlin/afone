@@ -1,0 +1,1044 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		476896B60538263DC415278B /* Pods_AfoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9D829617F42E9824CA39C0 /* Pods_AfoneTests.framework */; };
+		98148FF722251EBF00AE22B4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98148FF622251EBF00AE22B4 /* String+Extensions.swift */; };
+		981490162225C25900AE22B4 /* CallKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981490152225C25900AE22B4 /* CallKitManager.swift */; };
+		981490182225C2C500AE22B4 /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981490172225C2C500AE22B4 /* AudioSessionManager.swift */; };
+		9814901A2225C37F00AE22B4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981490192225C37F00AE22B4 /* AVFoundation.framework */; };
+		9814901C2225C39A00AE22B4 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9814901B2225C39A00AE22B4 /* CoreAudio.framework */; };
+		9814901E2225C3A300AE22B4 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9814901D2225C3A300AE22B4 /* MetalKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		981490202225C3B300AE22B4 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9814901F2225C3B300AE22B4 /* VideoToolbox.framework */; };
+		981490222225C3BA00AE22B4 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981490212225C3BA00AE22B4 /* GLKit.framework */; };
+		981490242225C3C800AE22B4 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981490232225C3C800AE22B4 /* PushKit.framework */; };
+		9814902722267FD500AE22B4 /* NumpadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814902522267FD400AE22B4 /* NumpadView.swift */; };
+		9814902E222680AF00AE22B4 /* DialerCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814902D222680AF00AE22B4 /* DialerCircleButton.swift */; };
+		98149035222681E500AE22B4 /* DialerKeyControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98149034222681E500AE22B4 /* DialerKeyControl.swift */; };
+		9814903A222685B600AE22B4 /* ABButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98149039222685B600AE22B4 /* ABButton.swift */; };
+		9814903F2226934100AE22B4 /* CircleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814903E2226934100AE22B4 /* CircleAnimation.swift */; };
+		981490412226C84600AE22B4 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981490402226C84600AE22B4 /* UIView+Extensions.swift */; };
+		981490442226CAA200AE22B4 /* LoadableFromXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981490432226CAA200AE22B4 /* LoadableFromXibView.swift */; };
+		98164FF4228BF2F500A94E94 /* CallOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98164FF3228BF2F500A94E94 /* CallOperation.swift */; };
+		98164FF72295374700A94E94 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98164FF52295374700A94E94 /* Localizable.strings */; };
+		981A2D1E22BA7B4F006018A0 /* Ringback.wav in Resources */ = {isa = PBXBuildFile; fileRef = 981A2D1D22BA7B4E006018A0 /* Ringback.wav */; };
+		981A2D2022BA7C0B006018A0 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981A2D1F22BA7C0B006018A0 /* SoundManager.swift */; };
+		981A2D2222BBD220006018A0 /* Elevator-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 981A2D2122BBD220006018A0 /* Elevator-music.mp3 */; };
+		981BE02422C3B42900787B5C /* PhoneNumberNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BE02322C3B42900787B5C /* PhoneNumberNormalizer.swift */; };
+		987C8EC122660AEA00B8F4C1 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987C8EC022660AEA00B8F4C1 /* CallViewController.swift */; };
+		987C8EC5226618C200B8F4C1 /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987C8EC4226618C200B8F4C1 /* CallView.swift */; };
+		987CE1F8224A8688001BA8F4 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987CE1F7224A8688001BA8F4 /* DependencyProvider.swift */; };
+		987CE1FA224B6F4C001BA8F4 /* DialerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987CE1F9224B6F4C001BA8F4 /* DialerViewController.swift */; };
+		987CE1FC224B9DD5001BA8F4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987CE1FB224B9DD5001BA8F4 /* BaseViewController.swift */; };
+		987CE1FE224BB258001BA8F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987CE1FD224BB258001BA8F4 /* LoginViewController.swift */; };
+		987CE200224CB9E9001BA8F4 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987CE1FF224CB9E9001BA8F4 /* Credentials.swift */; };
+		987CE202224CC44F001BA8F4 /* FormViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987CE201224CC44E001BA8F4 /* FormViewLayout.swift */; };
+		987CE204224CCC7A001BA8F4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987CE203224CCC7A001BA8F4 /* SettingsViewController.swift */; };
+		9895DEAB2211B20800AB2F46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895DEAA2211B20800AB2F46 /* AppDelegate.swift */; };
+		9895DEAD2211B20800AB2F46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895DEAC2211B20800AB2F46 /* ViewController.swift */; };
+		9895DEB02211B20800AB2F46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9895DEAE2211B20800AB2F46 /* Main.storyboard */; };
+		9895DEB22211B20900AB2F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9895DEB12211B20900AB2F46 /* Assets.xcassets */; };
+		9895DEB52211B20900AB2F46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9895DEB32211B20900AB2F46 /* LaunchScreen.storyboard */; };
+		9895DEC02211B20A00AB2F46 /* AfoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895DEBF2211B20A00AB2F46 /* AfoneTests.swift */; };
+		9895DECD2211B6C500AB2F46 /* UIBundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895DECC2211B6C500AB2F46 /* UIBundle+Extensions.swift */; };
+		9895DED02211B98700AB2F46 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895DECF2211B98700AB2F46 /* Constants.swift */; };
+		9895DED42211BB4800AB2F46 /* PushRegistryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895DED32211BB4800AB2F46 /* PushRegistryHandler.swift */; };
+		9895DED62211BFF800AB2F46 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895DED52211BFF800AB2F46 /* Data+Extensions.swift */; };
+		9895DED92211C74900AB2F46 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895DED82211C74900AB2F46 /* Logging.swift */; };
+		9895DEDB22120F4E00AB2F46 /* VoIPProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895DEDA22120F4E00AB2F46 /* VoIPProtocol.swift */; };
+		9895DEDE22120F9800AB2F46 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895DEDD22120F9800AB2F46 /* Call.swift */; };
+		9895DEE02212123D00AB2F46 /* VoIPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895DEDF2212123D00AB2F46 /* VoIPManager.swift */; };
+		9895DEE3221212E800AB2F46 /* PortSIPAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895DEE2221212E800AB2F46 /* PortSIPAdapter.swift */; };
+		989FA33322773B950077B228 /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989FA33222773B950077B228 /* Permissions.swift */; };
+		989FA335227B22E20077B228 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989FA334227B22E20077B228 /* AlertHelper.swift */; };
+		989FA3382281A2240077B228 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989FA3372281A2240077B228 /* PreviewViewController.swift */; };
+		98AFD1EC224910B8009EBA5B /* Calling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AFD1EB224910B7009EBA5B /* Calling.swift */; };
+		98B6420922500B1D00EF7350 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6420822500B1C00EF7350 /* UIButton+Extensions.swift */; };
+		98B6420B22500B7D00EF7350 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6420A22500B7D00EF7350 /* UIImage+Extensions.swift */; };
+		98B6420D2250B8DC00EF7350 /* AdvancedLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6420C2250B8DC00EF7350 /* AdvancedLoginViewController.swift */; };
+		98B6420F2250BBBB00EF7350 /* AutomatSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6420E2250BBBB00EF7350 /* AutomatSegue.swift */; };
+		98B642122250F2D700EF7350 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B642102250F2D700EF7350 /* TextFieldTableViewCell.swift */; };
+		98B642132250F2D700EF7350 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B642112250F2D700EF7350 /* TextFieldTableViewCell.xib */; };
+		98B64215225137D200EF7350 /* ABSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B64214225137D200EF7350 /* ABSecureTextField.swift */; };
+		98B642182251F68C00EF7350 /* CheckmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B642162251F68C00EF7350 /* CheckmarkTableViewCell.swift */; };
+		98B642192251F68C00EF7350 /* CheckmarkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B642172251F68C00EF7350 /* CheckmarkTableViewCell.xib */; };
+		98B6421B22520E5200EF7350 /* CellSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6421A22520E5200EF7350 /* CellSelector.swift */; };
+		98B6421D22522F9E00EF7350 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6421C22522F9E00EF7350 /* AboutViewController.swift */; };
+		98B6422122524A1C00EF7350 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6422022524A1C00EF7350 /* Reusable.swift */; };
+		98B6422322524A4400EF7350 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6422222524A4400EF7350 /* UITableView+Extensions.swift */; };
+		98B642262253485000EF7350 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B642242253485000EF7350 /* SwitchTableViewCell.swift */; };
+		98B6422922534D8400EF7350 /* TLSDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6422822534D8400EF7350 /* TLSDataSource.swift */; };
+		98BACADC2289581F0011450D /* NSUserActivity+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BACADB2289581F0011450D /* NSUserActivity+Extensions.swift */; };
+		98DDAC96222D04A900313C7C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DDAC95222D04A900313C7C /* libc++.tbd */; };
+		98DDAC98222D04B100313C7C /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DDAC97222D04B100313C7C /* libresolv.tbd */; };
+		98DDAC9A222D0B6400313C7C /* DTMF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DDAC99222D0B6400313C7C /* DTMF.swift */; };
+		98DDAC9C222D4F1400313C7C /* DTMFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DDAC9B222D4F1400313C7C /* DTMFManager.swift */; };
+		98DDAC9E222D554400313C7C /* FeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DDAC9D222D554400313C7C /* FeedbackManager.swift */; };
+		98DDACA2222D729300313C7C /* DialerTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DDAC9F222D729300313C7C /* DialerTextView.swift */; };
+		98DDACA9222D8A3000313C7C /* DialerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DDACA0222D729300313C7C /* DialerView.swift */; };
+		98EB4FF12296C4C700595554 /* CallView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98EB4FF32296C4C700595554 /* CallView.xib */; };
+		98EB4FF72296C8D300595554 /* SipUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EB4FF62296C8D300595554 /* SipUser.swift */; };
+		98EB4FFC2297FA5200595554 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EB4FFB2297FA5200595554 /* LocalNotificationManager.swift */; };
+		98F93C302253DF9B006A4AAA /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F93C2F2253DF9B006A4AAA /* KeychainManager.swift */; };
+		98F93C322254D59B006A4AAA /* TableViewSectionsItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F93C312254D59B006A4AAA /* TableViewSectionsItems.swift */; };
+		98F93C342255DF2C006A4AAA /* Codec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F93C332255DF2C006A4AAA /* Codec.swift */; };
+		98F93C3622573400006A4AAA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F93C3522573400006A4AAA /* Settings.swift */; };
+		98F93C38225734D6006A4AAA /* SRTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F93C37225734D6006A4AAA /* SRTP.swift */; };
+		98F93C3A225DFED7006A4AAA /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F93C39225DFED7006A4AAA /* UserDefaults+Extensions.swift */; };
+		98FB2738222D8B4200BE5AB3 /* NumpadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9814902622267FD500AE22B4 /* NumpadView.xib */; };
+		98FB2739222D8B4200BE5AB3 /* DialerCircleButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98DDACA6222D877A00313C7C /* DialerCircleButton.xib */; };
+		98FB273A222D8B4200BE5AB3 /* DialerKeyControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98149030222681B500AE22B4 /* DialerKeyControl.xib */; };
+		98FB273B222D8B4200BE5AB3 /* DialerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98DDACA1222D729300313C7C /* DialerView.xib */; };
+		E5ADC188CB4D0C1F1FE5AB6F /* Pods_Afone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAE811422ECA872F497310E /* Pods_Afone.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9895DEBC2211B20A00AB2F46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9895DE9F2211B20700AB2F46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9895DEA62211B20700AB2F46;
+			remoteInfo = Automat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48AF339FAB160382836E2A31 /* Pods-Afone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Afone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Afone/Pods-Afone.release.xcconfig"; sourceTree = "<group>"; };
+		4F9D829617F42E9824CA39C0 /* Pods_AfoneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AfoneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66FFCCCC5F0C85B2E8A6BA51 /* Pods-AfoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AfoneTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AfoneTests/Pods-AfoneTests.release.xcconfig"; sourceTree = "<group>"; };
+		6CFDE19514E601F97CC28F7C /* Pods-Automat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Automat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Automat/Pods-Automat.debug.xcconfig"; sourceTree = "<group>"; };
+		8EC4B4B3A77F8C6755EFC384 /* Pods-AutomatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutomatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutomatTests/Pods-AutomatTests.release.xcconfig"; sourceTree = "<group>"; };
+		98148FF622251EBF00AE22B4 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		981490152225C25900AE22B4 /* CallKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitManager.swift; sourceTree = "<group>"; };
+		981490172225C2C500AE22B4 /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
+		981490192225C37F00AE22B4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9814901B2225C39A00AE22B4 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		9814901D2225C3A300AE22B4 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		9814901F2225C3B300AE22B4 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		981490212225C3BA00AE22B4 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		981490232225C3C800AE22B4 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		9814902522267FD400AE22B4 /* NumpadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumpadView.swift; sourceTree = "<group>"; };
+		9814902622267FD500AE22B4 /* NumpadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumpadView.xib; sourceTree = "<group>"; };
+		9814902D222680AF00AE22B4 /* DialerCircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialerCircleButton.swift; sourceTree = "<group>"; };
+		98149030222681B500AE22B4 /* DialerKeyControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DialerKeyControl.xib; sourceTree = "<group>"; };
+		98149034222681E500AE22B4 /* DialerKeyControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialerKeyControl.swift; sourceTree = "<group>"; };
+		98149039222685B600AE22B4 /* ABButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABButton.swift; sourceTree = "<group>"; };
+		9814903E2226934100AE22B4 /* CircleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAnimation.swift; sourceTree = "<group>"; };
+		981490402226C84600AE22B4 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		981490432226CAA200AE22B4 /* LoadableFromXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableFromXibView.swift; sourceTree = "<group>"; };
+		98164FF3228BF2F500A94E94 /* CallOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallOperation.swift; sourceTree = "<group>"; };
+		98164FF62295374700A94E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Afone/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		98164FF82295378600A94E94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Afone/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		981A2D1D22BA7B4E006018A0 /* Ringback.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ringback.wav; sourceTree = "<group>"; };
+		981A2D1F22BA7C0B006018A0 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		981A2D2122BBD220006018A0 /* Elevator-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Elevator-music.mp3"; sourceTree = "<group>"; };
+		981BE02322C3B42900787B5C /* PhoneNumberNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberNormalizer.swift; sourceTree = "<group>"; };
+		987C8EC022660AEA00B8F4C1 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		987C8EC4226618C200B8F4C1 /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
+		987CE1F7224A8688001BA8F4 /* DependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyProvider.swift; sourceTree = "<group>"; };
+		987CE1F9224B6F4C001BA8F4 /* DialerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialerViewController.swift; sourceTree = "<group>"; };
+		987CE1FB224B9DD5001BA8F4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		987CE1FD224BB258001BA8F4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		987CE1FF224CB9E9001BA8F4 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		987CE201224CC44E001BA8F4 /* FormViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewLayout.swift; sourceTree = "<group>"; };
+		987CE203224CCC7A001BA8F4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9895DEA72211B20800AB2F46 /* Afone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Afone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9895DEAA2211B20800AB2F46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9895DEAC2211B20800AB2F46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9895DEAF2211B20800AB2F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9895DEB12211B20900AB2F46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9895DEB42211B20900AB2F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9895DEB62211B20900AB2F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9895DEBB2211B20A00AB2F46 /* AfoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AfoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9895DEBF2211B20A00AB2F46 /* AfoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfoneTests.swift; sourceTree = "<group>"; };
+		9895DEC12211B20A00AB2F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9895DECC2211B6C500AB2F46 /* UIBundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBundle+Extensions.swift"; sourceTree = "<group>"; };
+		9895DECF2211B98700AB2F46 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9895DED32211BB4800AB2F46 /* PushRegistryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushRegistryHandler.swift; sourceTree = "<group>"; };
+		9895DED52211BFF800AB2F46 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		9895DED82211C74900AB2F46 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		9895DEDA22120F4E00AB2F46 /* VoIPProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoIPProtocol.swift; sourceTree = "<group>"; };
+		9895DEDD22120F9800AB2F46 /* Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		9895DEDF2212123D00AB2F46 /* VoIPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoIPManager.swift; sourceTree = "<group>"; };
+		9895DEE2221212E800AB2F46 /* PortSIPAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortSIPAdapter.swift; sourceTree = "<group>"; };
+		989FA33222773B950077B228 /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
+		989FA334227B22E20077B228 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		989FA3362281878D0077B228 /* Afone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Afone.entitlements; sourceTree = "<group>"; };
+		989FA3372281A2240077B228 /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		98AFD1EB224910B7009EBA5B /* Calling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calling.swift; sourceTree = "<group>"; };
+		98B6420822500B1C00EF7350 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		98B6420A22500B7D00EF7350 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		98B6420C2250B8DC00EF7350 /* AdvancedLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedLoginViewController.swift; sourceTree = "<group>"; };
+		98B6420E2250BBBB00EF7350 /* AutomatSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomatSegue.swift; sourceTree = "<group>"; };
+		98B642102250F2D700EF7350 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		98B642112250F2D700EF7350 /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		98B64214225137D200EF7350 /* ABSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABSecureTextField.swift; sourceTree = "<group>"; };
+		98B642162251F68C00EF7350 /* CheckmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkTableViewCell.swift; sourceTree = "<group>"; };
+		98B642172251F68C00EF7350 /* CheckmarkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckmarkTableViewCell.xib; sourceTree = "<group>"; };
+		98B6421A22520E5200EF7350 /* CellSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSelector.swift; sourceTree = "<group>"; };
+		98B6421C22522F9E00EF7350 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		98B6422022524A1C00EF7350 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		98B6422222524A4400EF7350 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		98B642242253485000EF7350 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		98B6422822534D8400EF7350 /* TLSDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLSDataSource.swift; sourceTree = "<group>"; };
+		98BACADB2289581F0011450D /* NSUserActivity+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+Extensions.swift"; sourceTree = "<group>"; };
+		98DDAC95222D04A900313C7C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		98DDAC97222D04B100313C7C /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		98DDAC99222D0B6400313C7C /* DTMF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTMF.swift; sourceTree = "<group>"; };
+		98DDAC9B222D4F1400313C7C /* DTMFManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTMFManager.swift; sourceTree = "<group>"; };
+		98DDAC9D222D554400313C7C /* FeedbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackManager.swift; sourceTree = "<group>"; };
+		98DDAC9F222D729300313C7C /* DialerTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialerTextView.swift; sourceTree = "<group>"; };
+		98DDACA0222D729300313C7C /* DialerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialerView.swift; sourceTree = "<group>"; };
+		98DDACA1222D729300313C7C /* DialerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DialerView.xib; sourceTree = "<group>"; };
+		98DDACA6222D877A00313C7C /* DialerCircleButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DialerCircleButton.xib; sourceTree = "<group>"; };
+		98EB4FF02296C4AC00595554 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		98EB4FF22296C4C700595554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CallView.xib; sourceTree = "<group>"; };
+		98EB4FF52296C4CC00595554 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CallView.strings; sourceTree = "<group>"; };
+		98EB4FF62296C8D300595554 /* SipUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SipUser.swift; sourceTree = "<group>"; };
+		98EB4FFB2297FA5200595554 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		98F93C2F2253DF9B006A4AAA /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		98F93C312254D59B006A4AAA /* TableViewSectionsItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSectionsItems.swift; sourceTree = "<group>"; };
+		98F93C332255DF2C006A4AAA /* Codec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codec.swift; sourceTree = "<group>"; };
+		98F93C3522573400006A4AAA /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		98F93C37225734D6006A4AAA /* SRTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRTP.swift; sourceTree = "<group>"; };
+		98F93C39225DFED7006A4AAA /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		9D67E830184A07457DA649DF /* Pods-Automat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Automat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Automat/Pods-Automat.release.xcconfig"; sourceTree = "<group>"; };
+		9FAE811422ECA872F497310E /* Pods_Afone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Afone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF9464E8D3ECAADD4EC2F15 /* Pods-AutomatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutomatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutomatTests/Pods-AutomatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C398B345135E55EFFE265D88 /* Pods-Afone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Afone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Afone/Pods-Afone.debug.xcconfig"; sourceTree = "<group>"; };
+		CFBE1E5F75030EF5A16CEF19 /* Pods-AfoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AfoneTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AfoneTests/Pods-AfoneTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9895DEA42211B20700AB2F46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98DDAC98222D04B100313C7C /* libresolv.tbd in Frameworks */,
+				98DDAC96222D04A900313C7C /* libc++.tbd in Frameworks */,
+				981490242225C3C800AE22B4 /* PushKit.framework in Frameworks */,
+				981490222225C3BA00AE22B4 /* GLKit.framework in Frameworks */,
+				981490202225C3B300AE22B4 /* VideoToolbox.framework in Frameworks */,
+				9814901E2225C3A300AE22B4 /* MetalKit.framework in Frameworks */,
+				9814901C2225C39A00AE22B4 /* CoreAudio.framework in Frameworks */,
+				9814901A2225C37F00AE22B4 /* AVFoundation.framework in Frameworks */,
+				E5ADC188CB4D0C1F1FE5AB6F /* Pods_Afone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9895DEB82211B20A00AB2F46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				476896B60538263DC415278B /* Pods_AfoneTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B2EDB59CFE28BBD60516D1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CFDE19514E601F97CC28F7C /* Pods-Automat.debug.xcconfig */,
+				9D67E830184A07457DA649DF /* Pods-Automat.release.xcconfig */,
+				ABF9464E8D3ECAADD4EC2F15 /* Pods-AutomatTests.debug.xcconfig */,
+				8EC4B4B3A77F8C6755EFC384 /* Pods-AutomatTests.release.xcconfig */,
+				C398B345135E55EFFE265D88 /* Pods-Afone.debug.xcconfig */,
+				48AF339FAB160382836E2A31 /* Pods-Afone.release.xcconfig */,
+				CFBE1E5F75030EF5A16CEF19 /* Pods-AfoneTests.debug.xcconfig */,
+				66FFCCCC5F0C85B2E8A6BA51 /* Pods-AfoneTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		53AF3CBA22A3CE04002B1950 /* Dialer */ = {
+			isa = PBXGroup;
+			children = (
+				98DDACA0222D729300313C7C /* DialerView.swift */,
+				98DDACA1222D729300313C7C /* DialerView.xib */,
+				9814902D222680AF00AE22B4 /* DialerCircleButton.swift */,
+				98DDACA6222D877A00313C7C /* DialerCircleButton.xib */,
+				98149034222681E500AE22B4 /* DialerKeyControl.swift */,
+				98149030222681B500AE22B4 /* DialerKeyControl.xib */,
+				98DDAC9F222D729300313C7C /* DialerTextView.swift */,
+			);
+			path = Dialer;
+			sourceTree = "<group>";
+		};
+		981490422226CA8700AE22B4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				98EB4FF32296C4C700595554 /* CallView.xib */,
+				987C8EC4226618C200B8F4C1 /* CallView.swift */,
+				98B6422022524A1C00EF7350 /* Reusable.swift */,
+				981490432226CAA200AE22B4 /* LoadableFromXibView.swift */,
+				98149039222685B600AE22B4 /* ABButton.swift */,
+				98B64214225137D200EF7350 /* ABSecureTextField.swift */,
+				9814902522267FD400AE22B4 /* NumpadView.swift */,
+				9814902622267FD500AE22B4 /* NumpadView.xib */,
+				53AF3CBA22A3CE04002B1950 /* Dialer */,
+				9814903E2226934100AE22B4 /* CircleAnimation.swift */,
+				98B6420E2250BBBB00EF7350 /* AutomatSegue.swift */,
+				98B642242253485000EF7350 /* SwitchTableViewCell.swift */,
+				98B642102250F2D700EF7350 /* TextFieldTableViewCell.swift */,
+				98B642112250F2D700EF7350 /* TextFieldTableViewCell.xib */,
+				98B642162251F68C00EF7350 /* CheckmarkTableViewCell.swift */,
+				98B642172251F68C00EF7350 /* CheckmarkTableViewCell.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9895DE9E2211B20700AB2F46 = {
+			isa = PBXGroup;
+			children = (
+				9895DEA92211B20800AB2F46 /* Afone */,
+				9895DEBE2211B20A00AB2F46 /* AfoneTests */,
+				9895DEA82211B20800AB2F46 /* Products */,
+				1B2EDB59CFE28BBD60516D1F /* Pods */,
+				FC29F5FCC4E22F7E21EE5C38 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9895DEA82211B20800AB2F46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9895DEA72211B20800AB2F46 /* Afone.app */,
+				9895DEBB2211B20A00AB2F46 /* AfoneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9895DEA92211B20800AB2F46 /* Afone */ = {
+			isa = PBXGroup;
+			children = (
+				989FA3362281878D0077B228 /* Afone.entitlements */,
+				9895DEE1221212CF00AB2F46 /* VoIP Adapters */,
+				981490422226CA8700AE22B4 /* UI */,
+				98EB4FF82296CC7900595554 /* View Controllers */,
+				9895DED12211B9D900AB2F46 /* Managers */,
+				9895DED22211BAAF00AB2F46 /* Model */,
+				9895DECB2211B6A700AB2F46 /* Extensions */,
+				9895DED72211C72600AB2F46 /* Helpers */,
+				9895DEDC22120F5C00AB2F46 /* Protocols */,
+				9895DECF2211B98700AB2F46 /* Constants.swift */,
+				9895DEAA2211B20800AB2F46 /* AppDelegate.swift */,
+				9895DEAE2211B20800AB2F46 /* Main.storyboard */,
+				9895DEB12211B20900AB2F46 /* Assets.xcassets */,
+				9895DEB32211B20900AB2F46 /* LaunchScreen.storyboard */,
+				9895DEB62211B20900AB2F46 /* Info.plist */,
+				981A2D1D22BA7B4E006018A0 /* Ringback.wav */,
+				981A2D2122BBD220006018A0 /* Elevator-music.mp3 */,
+				98164FF52295374700A94E94 /* Localizable.strings */,
+			);
+			path = Afone;
+			sourceTree = "<group>";
+		};
+		9895DEBE2211B20A00AB2F46 /* AfoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				9895DEBF2211B20A00AB2F46 /* AfoneTests.swift */,
+				9895DEC12211B20A00AB2F46 /* Info.plist */,
+			);
+			path = AfoneTests;
+			sourceTree = "<group>";
+		};
+		9895DECB2211B6A700AB2F46 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9895DECC2211B6C500AB2F46 /* UIBundle+Extensions.swift */,
+				9895DED52211BFF800AB2F46 /* Data+Extensions.swift */,
+				98148FF622251EBF00AE22B4 /* String+Extensions.swift */,
+				981490402226C84600AE22B4 /* UIView+Extensions.swift */,
+				98B6420822500B1C00EF7350 /* UIButton+Extensions.swift */,
+				98B6420A22500B7D00EF7350 /* UIImage+Extensions.swift */,
+				98F93C39225DFED7006A4AAA /* UserDefaults+Extensions.swift */,
+				98B6422222524A4400EF7350 /* UITableView+Extensions.swift */,
+				98BACADB2289581F0011450D /* NSUserActivity+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9895DED12211B9D900AB2F46 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9895DED32211BB4800AB2F46 /* PushRegistryHandler.swift */,
+				9895DEDF2212123D00AB2F46 /* VoIPManager.swift */,
+				981490152225C25900AE22B4 /* CallKitManager.swift */,
+				981490172225C2C500AE22B4 /* AudioSessionManager.swift */,
+				98DDAC99222D0B6400313C7C /* DTMF.swift */,
+				98DDAC9B222D4F1400313C7C /* DTMFManager.swift */,
+				98DDAC9D222D554400313C7C /* FeedbackManager.swift */,
+				98AFD1EB224910B7009EBA5B /* Calling.swift */,
+				987CE1F7224A8688001BA8F4 /* DependencyProvider.swift */,
+				981A2D1F22BA7C0B006018A0 /* SoundManager.swift */,
+				98F93C2F2253DF9B006A4AAA /* KeychainManager.swift */,
+				989FA33222773B950077B228 /* Permissions.swift */,
+				98EB4FFB2297FA5200595554 /* LocalNotificationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9895DED22211BAAF00AB2F46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				98164FF3228BF2F500A94E94 /* CallOperation.swift */,
+				98B6422822534D8400EF7350 /* TLSDataSource.swift */,
+				9895DEDD22120F9800AB2F46 /* Call.swift */,
+				987CE1FF224CB9E9001BA8F4 /* Credentials.swift */,
+				98F93C312254D59B006A4AAA /* TableViewSectionsItems.swift */,
+				98F93C332255DF2C006A4AAA /* Codec.swift */,
+				98F93C37225734D6006A4AAA /* SRTP.swift */,
+				98F93C3522573400006A4AAA /* Settings.swift */,
+				98EB4FF62296C8D300595554 /* SipUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9895DED72211C72600AB2F46 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9895DED82211C74900AB2F46 /* Logging.swift */,
+				98B6421A22520E5200EF7350 /* CellSelector.swift */,
+				989FA334227B22E20077B228 /* AlertHelper.swift */,
+				981BE02322C3B42900787B5C /* PhoneNumberNormalizer.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9895DEDC22120F5C00AB2F46 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9895DEDA22120F4E00AB2F46 /* VoIPProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9895DEE1221212CF00AB2F46 /* VoIP Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				9895DEE2221212E800AB2F46 /* PortSIPAdapter.swift */,
+			);
+			path = "VoIP Adapters";
+			sourceTree = "<group>";
+		};
+		98EB4FF82296CC7900595554 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9895DEAC2211B20800AB2F46 /* ViewController.swift */,
+				987CE201224CC44E001BA8F4 /* FormViewLayout.swift */,
+				987CE1FB224B9DD5001BA8F4 /* BaseViewController.swift */,
+				987CE1F9224B6F4C001BA8F4 /* DialerViewController.swift */,
+				987CE1FD224BB258001BA8F4 /* LoginViewController.swift */,
+				98B6420C2250B8DC00EF7350 /* AdvancedLoginViewController.swift */,
+				989FA3372281A2240077B228 /* PreviewViewController.swift */,
+				987C8EC022660AEA00B8F4C1 /* CallViewController.swift */,
+				987CE203224CCC7A001BA8F4 /* SettingsViewController.swift */,
+				98B6421C22522F9E00EF7350 /* AboutViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FC29F5FCC4E22F7E21EE5C38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98DDAC97222D04B100313C7C /* libresolv.tbd */,
+				98DDAC95222D04A900313C7C /* libc++.tbd */,
+				981490232225C3C800AE22B4 /* PushKit.framework */,
+				981490212225C3BA00AE22B4 /* GLKit.framework */,
+				9814901F2225C3B300AE22B4 /* VideoToolbox.framework */,
+				9814901D2225C3A300AE22B4 /* MetalKit.framework */,
+				9814901B2225C39A00AE22B4 /* CoreAudio.framework */,
+				981490192225C37F00AE22B4 /* AVFoundation.framework */,
+				9FAE811422ECA872F497310E /* Pods_Afone.framework */,
+				4F9D829617F42E9824CA39C0 /* Pods_AfoneTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9895DEA62211B20700AB2F46 /* Afone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9895DEC42211B20A00AB2F46 /* Build configuration list for PBXNativeTarget "Afone" */;
+			buildPhases = (
+				D176944EA4D85373EBF3884F /* [CP] Check Pods Manifest.lock */,
+				9895DEA32211B20700AB2F46 /* Sources */,
+				9895DEA42211B20700AB2F46 /* Frameworks */,
+				9895DEA52211B20700AB2F46 /* Resources */,
+				6AD33ACD8777C019F71037BB /* [CP] Embed Pods Frameworks */,
+				5398FFC32297EC5300C214F8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Afone;
+			productName = Automat;
+			productReference = 9895DEA72211B20800AB2F46 /* Afone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9895DEBA2211B20A00AB2F46 /* AfoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9895DEC72211B20A00AB2F46 /* Build configuration list for PBXNativeTarget "AfoneTests" */;
+			buildPhases = (
+				3729210D14700A9CD84828D9 /* [CP] Check Pods Manifest.lock */,
+				9895DEB72211B20A00AB2F46 /* Sources */,
+				9895DEB82211B20A00AB2F46 /* Frameworks */,
+				9895DEB92211B20A00AB2F46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9895DEBD2211B20A00AB2F46 /* PBXTargetDependency */,
+			);
+			name = AfoneTests;
+			productName = AutomatTests;
+			productReference = 9895DEBB2211B20A00AB2F46 /* AfoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9895DE9F2211B20700AB2F46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Automat Berlin GmbH";
+				TargetAttributes = {
+					9895DEA62211B20700AB2F46 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					9895DEBA2211B20A00AB2F46 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 9895DEA62211B20700AB2F46;
+					};
+				};
+			};
+			buildConfigurationList = 9895DEA22211B20700AB2F46 /* Build configuration list for PBXProject "Afone" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9895DE9E2211B20700AB2F46;
+			productRefGroup = 9895DEA82211B20800AB2F46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9895DEA62211B20700AB2F46 /* Afone */,
+				9895DEBA2211B20A00AB2F46 /* AfoneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9895DEA52211B20700AB2F46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98EB4FF12296C4C700595554 /* CallView.xib in Resources */,
+				98FB2738222D8B4200BE5AB3 /* NumpadView.xib in Resources */,
+				98164FF72295374700A94E94 /* Localizable.strings in Resources */,
+				98FB2739222D8B4200BE5AB3 /* DialerCircleButton.xib in Resources */,
+				98FB273A222D8B4200BE5AB3 /* DialerKeyControl.xib in Resources */,
+				98FB273B222D8B4200BE5AB3 /* DialerView.xib in Resources */,
+				9895DEB52211B20900AB2F46 /* LaunchScreen.storyboard in Resources */,
+				981A2D2222BBD220006018A0 /* Elevator-music.mp3 in Resources */,
+				9895DEB22211B20900AB2F46 /* Assets.xcassets in Resources */,
+				9895DEB02211B20800AB2F46 /* Main.storyboard in Resources */,
+				981A2D1E22BA7B4F006018A0 /* Ringback.wav in Resources */,
+				98B642132250F2D700EF7350 /* TextFieldTableViewCell.xib in Resources */,
+				98B642192251F68C00EF7350 /* CheckmarkTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9895DEB92211B20A00AB2F46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3729210D14700A9CD84828D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AfoneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5398FFC32297EC5300C214F8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+		6AD33ACD8777C019F71037BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Afone/Pods-Afone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Afone/Pods-Afone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Afone/Pods-Afone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D176944EA4D85373EBF3884F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Afone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9895DEA32211B20700AB2F46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989FA33322773B950077B228 /* Permissions.swift in Sources */,
+				98DDAC9A222D0B6400313C7C /* DTMF.swift in Sources */,
+				98B642182251F68C00EF7350 /* CheckmarkTableViewCell.swift in Sources */,
+				981490442226CAA200AE22B4 /* LoadableFromXibView.swift in Sources */,
+				98F93C3622573400006A4AAA /* Settings.swift in Sources */,
+				981490412226C84600AE22B4 /* UIView+Extensions.swift in Sources */,
+				9895DECD2211B6C500AB2F46 /* UIBundle+Extensions.swift in Sources */,
+				9895DEE3221212E800AB2F46 /* PortSIPAdapter.swift in Sources */,
+				987CE1FC224B9DD5001BA8F4 /* BaseViewController.swift in Sources */,
+				989FA335227B22E20077B228 /* AlertHelper.swift in Sources */,
+				98F93C302253DF9B006A4AAA /* KeychainManager.swift in Sources */,
+				98B642122250F2D700EF7350 /* TextFieldTableViewCell.swift in Sources */,
+				9814902E222680AF00AE22B4 /* DialerCircleButton.swift in Sources */,
+				9814903A222685B600AE22B4 /* ABButton.swift in Sources */,
+				987C8EC122660AEA00B8F4C1 /* CallViewController.swift in Sources */,
+				98B6420D2250B8DC00EF7350 /* AdvancedLoginViewController.swift in Sources */,
+				98B6420922500B1D00EF7350 /* UIButton+Extensions.swift in Sources */,
+				9895DEDE22120F9800AB2F46 /* Call.swift in Sources */,
+				98149035222681E500AE22B4 /* DialerKeyControl.swift in Sources */,
+				9895DEAD2211B20800AB2F46 /* ViewController.swift in Sources */,
+				987C8EC5226618C200B8F4C1 /* CallView.swift in Sources */,
+				98148FF722251EBF00AE22B4 /* String+Extensions.swift in Sources */,
+				981490182225C2C500AE22B4 /* AudioSessionManager.swift in Sources */,
+				987CE1FE224BB258001BA8F4 /* LoginViewController.swift in Sources */,
+				98B6420B22500B7D00EF7350 /* UIImage+Extensions.swift in Sources */,
+				9895DEAB2211B20800AB2F46 /* AppDelegate.swift in Sources */,
+				981A2D2022BA7C0B006018A0 /* SoundManager.swift in Sources */,
+				9814903F2226934100AE22B4 /* CircleAnimation.swift in Sources */,
+				98B6420F2250BBBB00EF7350 /* AutomatSegue.swift in Sources */,
+				98DDAC9C222D4F1400313C7C /* DTMFManager.swift in Sources */,
+				98DDACA2222D729300313C7C /* DialerTextView.swift in Sources */,
+				987CE1FA224B6F4C001BA8F4 /* DialerViewController.swift in Sources */,
+				98164FF4228BF2F500A94E94 /* CallOperation.swift in Sources */,
+				98B6422922534D8400EF7350 /* TLSDataSource.swift in Sources */,
+				9814902722267FD500AE22B4 /* NumpadView.swift in Sources */,
+				98AFD1EC224910B8009EBA5B /* Calling.swift in Sources */,
+				98F93C38225734D6006A4AAA /* SRTP.swift in Sources */,
+				989FA3382281A2240077B228 /* PreviewViewController.swift in Sources */,
+				98DDAC9E222D554400313C7C /* FeedbackManager.swift in Sources */,
+				9895DED92211C74900AB2F46 /* Logging.swift in Sources */,
+				98DDACA9222D8A3000313C7C /* DialerView.swift in Sources */,
+				98B64215225137D200EF7350 /* ABSecureTextField.swift in Sources */,
+				987CE1F8224A8688001BA8F4 /* DependencyProvider.swift in Sources */,
+				9895DED62211BFF800AB2F46 /* Data+Extensions.swift in Sources */,
+				987CE200224CB9E9001BA8F4 /* Credentials.swift in Sources */,
+				98B6422322524A4400EF7350 /* UITableView+Extensions.swift in Sources */,
+				98B6421B22520E5200EF7350 /* CellSelector.swift in Sources */,
+				981490162225C25900AE22B4 /* CallKitManager.swift in Sources */,
+				9895DEDB22120F4E00AB2F46 /* VoIPProtocol.swift in Sources */,
+				98B6421D22522F9E00EF7350 /* AboutViewController.swift in Sources */,
+				98BACADC2289581F0011450D /* NSUserActivity+Extensions.swift in Sources */,
+				98B6422122524A1C00EF7350 /* Reusable.swift in Sources */,
+				98F93C3A225DFED7006A4AAA /* UserDefaults+Extensions.swift in Sources */,
+				98F93C342255DF2C006A4AAA /* Codec.swift in Sources */,
+				987CE204224CCC7A001BA8F4 /* SettingsViewController.swift in Sources */,
+				9895DEE02212123D00AB2F46 /* VoIPManager.swift in Sources */,
+				9895DED02211B98700AB2F46 /* Constants.swift in Sources */,
+				98B642262253485000EF7350 /* SwitchTableViewCell.swift in Sources */,
+				987CE202224CC44F001BA8F4 /* FormViewLayout.swift in Sources */,
+				98EB4FFC2297FA5200595554 /* LocalNotificationManager.swift in Sources */,
+				981BE02422C3B42900787B5C /* PhoneNumberNormalizer.swift in Sources */,
+				9895DED42211BB4800AB2F46 /* PushRegistryHandler.swift in Sources */,
+				98F93C322254D59B006A4AAA /* TableViewSectionsItems.swift in Sources */,
+				98EB4FF72296C8D300595554 /* SipUser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9895DEB72211B20A00AB2F46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9895DEC02211B20A00AB2F46 /* AfoneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9895DEBD2211B20A00AB2F46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9895DEA62211B20700AB2F46 /* Afone */;
+			targetProxy = 9895DEBC2211B20A00AB2F46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98164FF52295374700A94E94 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98164FF62295374700A94E94 /* Base */,
+				98164FF82295378600A94E94 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		9895DEAE2211B20800AB2F46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9895DEAF2211B20800AB2F46 /* Base */,
+				98EB4FF02296C4AC00595554 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9895DEB32211B20900AB2F46 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9895DEB42211B20900AB2F46 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		98EB4FF32296C4C700595554 /* CallView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98EB4FF22296C4C700595554 /* Base */,
+				98EB4FF52296C4CC00595554 /* en */,
+			);
+			name = CallView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9895DEC22211B20A00AB2F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9895DEC32211B20A00AB2F46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9895DEC52211B20A00AB2F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C398B345135E55EFFE265D88 /* Pods-Afone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Afone/Afone.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTLQJCXVMN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Afone/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = berlin.automat.afon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9895DEC62211B20A00AB2F46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48AF339FAB160382836E2A31 /* Pods-Afone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Afone/Afone.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTLQJCXVMN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Afone/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = berlin.automat.afon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9895DEC82211B20A00AB2F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFBE1E5F75030EF5A16CEF19 /* Pods-AfoneTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTLQJCXVMN;
+				INFOPLIST_FILE = AfoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.automat.berlin.AfoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Afone.app/Afone";
+			};
+			name = Debug;
+		};
+		9895DEC92211B20A00AB2F46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66FFCCCC5F0C85B2E8A6BA51 /* Pods-AfoneTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTLQJCXVMN;
+				INFOPLIST_FILE = AfoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.automat.berlin.AfoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Afone.app/Afone";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9895DEA22211B20700AB2F46 /* Build configuration list for PBXProject "Afone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9895DEC22211B20A00AB2F46 /* Debug */,
+				9895DEC32211B20A00AB2F46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9895DEC42211B20A00AB2F46 /* Build configuration list for PBXNativeTarget "Afone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9895DEC52211B20A00AB2F46 /* Debug */,
+				9895DEC62211B20A00AB2F46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9895DEC72211B20A00AB2F46 /* Build configuration list for PBXNativeTarget "AfoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9895DEC82211B20A00AB2F46 /* Debug */,
+				9895DEC92211B20A00AB2F46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9895DE9F2211B20700AB2F46 /* Project object */;
+}
