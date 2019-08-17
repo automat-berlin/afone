@@ -21,6 +21,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+//swiftlint:disable file_length
+
 import Foundation
 import CocoaLumberjack
 import PortSIPVoIPSDK
@@ -35,6 +37,9 @@ class PortSIPAdapter: NSObject {
 
     /// The server credentials.
     private var credentials: Credentials?
+
+    /// Last remembered settings
+    private var settings: Settings?
 
     /// The application’s `VoIPManager` used to interact with a concrete adapter implementation.
     private let voipManager: VoIPManager
@@ -271,6 +276,7 @@ extension PortSIPAdapter: VoIPManagerDelegate {
     }
 
     func reload(with settings: Settings) {
+        self.settings = settings
         DispatchQueue.global(qos: .background).async {
             self.setupCodecsAndSettings(settings)
         }
@@ -325,7 +331,11 @@ extension PortSIPAdapter: VoIPManagerDelegate {
     }
 
     func willEnterForeground() {
-        initializeSip { _ in }
+        initializeSip { [weak self] _ in
+            if let settings = self?.settings {
+                self?.reload(with: settings)
+            }
+        }
     }
 
     func initAdapter(credentials: Credentials, completion: @escaping (NSError?) -> Void) {

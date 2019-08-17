@@ -261,7 +261,9 @@ extension CallKitManager: CallDelegate {
             guard call.isHungUpRemotely else {
                 return
             }
-            requestEndCall(completion: nil)
+            requestEndCall { [weak self] (_) in
+                self?.provider.invalidate()
+            }
         case .talking:
             provider.reportOutgoingCall(with: call.uuid, connectedAt: nil)
         default:
@@ -302,6 +304,7 @@ extension CallKitManager {
                 DDLogError("Error while requesting call start: \(String(describing: error?.localizedDescription)).")
 
                 AudioSessionManager.configureAudioSession(type: .restore)
+                self?.provider.invalidate()
             }
 
             completion(error)

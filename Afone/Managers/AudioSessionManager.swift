@@ -72,6 +72,12 @@ class AudioSessionManager {
                 DDLogError("🔊 Error while setting preferred sample rate: \(String(describing: error.localizedDescription)).")
             }
 
+            do {
+                try audioSession.setActive(true, options: [])
+            } catch {
+                DDLogError("🔊 Error while setting audio sesssion active: \(String(describing: error.localizedDescription)).")
+            }
+
             DDLogInfo("🔊 Successfully configured audio mode \(self)")
         }
     }
@@ -83,7 +89,7 @@ class AudioSessionManager {
     static func routeAudioToSpeaker(completion: (Bool) -> Void) {
         AudioSessionManager.configureAudioSession(type: .video)
         do {
-            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
+            try AVAudioSession.sharedInstance().overrideOutputAudioPort(.speaker)
         } catch {
             completion(false)
             return
@@ -95,7 +101,7 @@ class AudioSessionManager {
     static func routeAudioToReceiver(completion: (Bool) -> Void) {
         AudioSessionManager.configureAudioSession(type: .voice)
         do {
-            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSession.PortOverride.none)
+            try AVAudioSession.sharedInstance().overrideOutputAudioPort(.none)
         } catch {
             completion(false)
             return

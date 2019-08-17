@@ -78,6 +78,8 @@ class CallView: LoadableFromXibView {
     @IBOutlet private weak var holdButton: UIButton!
     @IBOutlet private weak var standardButtonsStackView: UIStackView!
     @IBOutlet private weak var durationLabel: UILabel!
+    @IBOutlet private weak var videoButtonLabel: UILabel!
+    @IBOutlet private weak var switchButtonLabel: UILabel!
 
     private var dtmfInput = ""
 
@@ -238,5 +240,12 @@ extension CallView {
 
     func setDuration(_ duration: String) {
         durationLabel.text = duration
+    }
+
+    func setVideoButtonsHidden(_ isHidden: Bool) {
+        videoButton.isHidden = isHidden
+        switchButton.isHidden = isHidden
+        videoButtonLabel.isHidden = isHidden
+        switchButtonLabel.isHidden = isHidden
     }
 }

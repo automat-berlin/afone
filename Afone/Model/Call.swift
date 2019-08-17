@@ -147,6 +147,10 @@ import CocoaLumberjack
 
         return stateString
     }
+
+    var supportsVideo: Bool? {
+        return voipManager.supportsVideo
+    }
 }
 
 // MARK: Duration

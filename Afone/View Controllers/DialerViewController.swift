@@ -176,6 +176,9 @@ class DialerViewController: BaseViewController, DialerViewDelegate {
 
 extension DialerViewController {
     var areAudioCodecsEmpty: Bool {
+        if dependencyProvider.voipManager.needsCodecs == false {
+            return false
+        }
         return dependencyProvider.settings.codecs.filter { $0.type == .audio }.isEmpty
     }
 }

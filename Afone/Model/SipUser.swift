@@ -36,6 +36,6 @@ class SipUser {
             return
         }
 
-        stringRepresentation = String(string.prefix(upTo: index)).replacingOccurrences(of: "sip:", with: "")
+        stringRepresentation = String(string.prefix(upTo: index)).replacingOccurrences(of: ".*sip:", with: "", options: .regularExpression, range: nil)
     }
 }

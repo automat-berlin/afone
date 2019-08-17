@@ -45,6 +45,10 @@ class CallViewController: PreviewViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        guard let supportsVideo = call?.supportsVideo else {
+            return
+        }
+
         callView.delegate = self
         callView.call = call
         // disable video, speaker, hold and switch button until we have a connected audio call
@@ -52,6 +56,8 @@ class CallViewController: PreviewViewController {
         if call?.isIncomingCall == false {
             callView.setCallControlButtonsEnabled(false)
         }
+
+        callView.setVideoButtonsHidden(!supportsVideo)
 
         dynamicsView = localVideoView
         localVideoView.isHidden = true
@@ -109,6 +115,10 @@ class CallViewController: PreviewViewController {
     }
 
     private func enableLocalVideo(_ enable: Bool) {
+        guard call?.supportsVideo == true else {
+            return
+        }
+
         if enable {
             hideCallView()
             isLoudSpeakerOn(true)
@@ -136,6 +146,10 @@ class CallViewController: PreviewViewController {
     }
 
     private func enableRemoteVideo(_ enable: Bool) {
+        guard call?.supportsVideo == true else {
+            return
+        }
+
         if enable {
             hideCallView()
             dependencyProvider.voipManager.enableRemoteVideo(true) { [weak self] (success) in

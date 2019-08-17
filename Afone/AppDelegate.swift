@@ -45,10 +45,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         stopBackgroundTask(for: application)
         startBackgroundTask(for: application)
+
+        dependencyProvider.voipManager.didEnterBackground()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         stopBackgroundTask(for: application)
+
+        dependencyProvider.voipManager.willEnterForeground()
     }
 
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {

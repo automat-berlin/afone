@@ -141,6 +141,9 @@ protocol VoIPManagerDelegate: class {
      */
     func stopAudio()
 
+    var supportsVideo: Bool { get }
+    var needsCodecs: Bool { get }
+
     /**
      Called when local video should be enabled.
 
@@ -180,6 +183,16 @@ protocol VoIPManagerDelegate: class {
 
      /// The view on which a remote video during a video call is rendered.
     var remoteVideoView: UIView? { get }
+}
+
+extension VoIPManagerDelegate {
+    var supportsVideo: Bool {
+        return true
+    }
+
+    var needsCodecs: Bool {
+        return true
+    }
 }
 
 protocol VoIPManagerVideoDelegate: class {
@@ -311,6 +324,14 @@ extension VoIPManager {
 
     var localVideoView: UIView? {
         return delegate?.localVideoView
+    }
+
+    var supportsVideo: Bool? {
+        return delegate?.supportsVideo
+    }
+
+    var needsCodecs: Bool? {
+        return delegate?.needsCodecs
     }
 }
 

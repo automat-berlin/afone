@@ -41,4 +41,9 @@ class Settings {
         codecs = UserDefaults.standard.structArrayData(Codec.self, forKey: Keys.codecs.rawValue)
         srtpOptions = UserDefaults.standard.structData(SRTP.self, forKey: Keys.srtpOptions.rawValue)
     }
+
+    func clear() {
+        UserDefaults.standard.removeObject(forKey: Keys.codecs.rawValue)
+        UserDefaults.standard.removeObject(forKey: Keys.srtpOptions.rawValue)
+    }
 }

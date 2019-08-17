@@ -115,16 +115,29 @@ class SettingsViewController: BaseViewController {
             }
         }
 
-        sections = [
-            Section(title: NSLocalizedString("Audio Codecs", comment: ""), items: audioCodecItems),
-            Section(title: NSLocalizedString("Video Codecs", comment: ""), items: videoCodecItems),
-            Section(title: NSLocalizedString("SRTP", comment: ""), items: srtpOptionItems),
-            Section(title: String(format: NSLocalizedString("Account - %@", comment: ""), dependencyProvider.credentials.login ?? ""), items: [
-                .link(text: NSLocalizedString("Logout", comment: ""), action: { [weak self] in
-                    self?.logout()
-                })
-                ])
-        ]
+        sections = []
+        if audioCodecItems.count > 0 {
+            let audioCodecsSection = Section(title: NSLocalizedString("Audio Codecs", comment: ""), items: audioCodecItems)
+            sections.append(audioCodecsSection)
+        }
+
+        if videoCodecItems.count > 0 {
+            let videoCodecsSection = Section(title: NSLocalizedString("Video Codecs", comment: ""), items: videoCodecItems)
+            sections.append(videoCodecsSection)
+        }
+
+        if srtpOptionItems.count > 0 {
+            let srtpOptionsSection = Section(title: NSLocalizedString("SRTP", comment: ""), items: srtpOptionItems)
+            sections.append(srtpOptionsSection)
+        }
+
+        let accountSection = Section(title: String(format: NSLocalizedString("Account - %@", comment: ""), dependencyProvider.credentials.login ?? ""), items: [
+            .link(text: NSLocalizedString("Logout", comment: ""), action: { [weak self] in
+                self?.logout()
+            })
+        ])
+
+        sections.append(accountSection)
     }
 
     private func setupUI() {

@@ -53,6 +53,7 @@ struct Constants {
         static let maxAudioBitrate = 44100
         static let unknownUser = Constants.unknownString
         static let callRejectedCode: Int = 480
+        static let callBusyCode: Int = 486
 
         static let audioPtime: Int32 = 20
         static let audioMaxPtime: Int32 = 60

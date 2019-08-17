@@ -28,6 +28,7 @@ import CocoaLumberjack
 @objc protocol PushPayloadObserver: class {
     func didUpdatePushToken(_ token: Data)
     func didReceivePayload(_ payload: [AnyHashable: Any])
+    func didInvalidatePushToken()
 }
 
 protocol PushPayloadProvider: class {
@@ -115,6 +116,8 @@ extension PushRegistryHandler: PKPushRegistryDelegate {
     }
 
     func pushRegistry(_ registry: PKPushRegistry, didInvalidatePushTokenFor type: PKPushType) {
-        //let bundleId = Bundle.main.safeBundleIdentifier
+        observers.allObjects.forEach({ observer in
+            observer.didInvalidatePushToken()
+        })
     }
 }
