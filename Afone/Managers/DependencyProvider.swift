@@ -49,10 +49,10 @@ class DependencyProvider {
         Logging.configure()
 
         calling = Calling(callKitManager: callKitManager)
-//        adapter = PortSIPAdapter(voipManager: voipManager)
+        adapter = PortSIPAdapter(voipManager: voipManager)
 //        adapter = AbtoAdapter(voipManager: voipManager)
-        adapter = TwilioVoiceAdapter(voipManager: voipManager)
-        pushRegistryManager.addObserver(adapter as! TwilioVoiceAdapter)
+//        adapter = TwilioVoiceAdapter(voipManager: voipManager)
+//        pushRegistryManager.addObserver(adapter as! TwilioVoiceAdapter)
 
         voipManager.delegate = adapter
         voipManager.dependencyProvider = self
