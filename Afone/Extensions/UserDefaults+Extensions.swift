@@ -22,6 +22,7 @@
 // SOFTWARE.
 
 import Foundation
+import CocoaLumberjack
 
 // Source: https://elmland.blog/2018/12/17/save-load-structs-userdefaults/
 
@@ -36,8 +37,12 @@ extension UserDefaults {
             return nil
         }
 
-        // TODO: Remove force try & improve error handling in Settings caller.
-        return try! JSONDecoder().decode(type, from: encodedData)
+        do {
+            return try JSONDecoder().decode(type, from: encodedData)
+        } catch {
+            DDLogError("Error while decoding structData: \(String(describing: encodedData))")
+        }
+        return nil
     }
 
     open func setStructArray<T: Codable>(_ value: [T], forKey defaultName: String) {

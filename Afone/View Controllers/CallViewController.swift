@@ -311,7 +311,7 @@ extension CallViewController: CallDelegate {
         switch callState {
         case .terminated:
             soundManager.stop()
-            dismissCall()
+            callViewDidHangupWithButton(button: nil)
         case .talking:
             soundManager.stop()
             callView.setHoldButtonEnabled(true)

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		476896B60538263DC415278B /* Pods_AfoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9D829617F42E9824CA39C0 /* Pods_AfoneTests.framework */; };
+		980B7ACF22F99B5600DCD395 /* TwilioVoiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980B7ACE22F99B5600DCD395 /* TwilioVoiceAdapter.swift */; };
 		98148FF722251EBF00AE22B4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98148FF622251EBF00AE22B4 /* String+Extensions.swift */; };
 		981490162225C25900AE22B4 /* CallKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981490152225C25900AE22B4 /* CallKitManager.swift */; };
 		981490182225C2C500AE22B4 /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981490172225C2C500AE22B4 /* AudioSessionManager.swift */; };
@@ -30,6 +31,12 @@
 		981A2D2022BA7C0B006018A0 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981A2D1F22BA7C0B006018A0 /* SoundManager.swift */; };
 		981A2D2222BBD220006018A0 /* Elevator-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 981A2D2122BBD220006018A0 /* Elevator-music.mp3 */; };
 		981BE02422C3B42900787B5C /* PhoneNumberNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BE02322C3B42900787B5C /* PhoneNumberNormalizer.swift */; };
+		9833D94122E839FF00262565 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9833D94022E839FE00262565 /* Accelerate.framework */; };
+		9833D94322E83A1800262565 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9833D94222E83A1800262565 /* AudioToolbox.framework */; };
+		9833D94522E83A2500262565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9833D94422E83A2500262565 /* CoreGraphics.framework */; };
+		9833D94722E83A3200262565 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9833D94622E83A3200262565 /* SystemConfiguration.framework */; };
+		9833D94922E83A4500262565 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9833D94822E83A4500262565 /* libz.tbd */; };
+		9861613122E726DA00FACDE9 /* AbtoAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9861613022E726DA00FACDE9 /* AbtoAdapter.swift */; };
 		987C8EC122660AEA00B8F4C1 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987C8EC022660AEA00B8F4C1 /* CallViewController.swift */; };
 		987C8EC5226618C200B8F4C1 /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987C8EC4226618C200B8F4C1 /* CallView.swift */; };
 		987CE1F8224A8688001BA8F4 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987CE1F7224A8688001BA8F4 /* DependencyProvider.swift */; };
@@ -39,6 +46,8 @@
 		987CE200224CB9E9001BA8F4 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987CE1FF224CB9E9001BA8F4 /* Credentials.swift */; };
 		987CE202224CC44F001BA8F4 /* FormViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987CE201224CC44E001BA8F4 /* FormViewLayout.swift */; };
 		987CE204224CCC7A001BA8F4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987CE203224CCC7A001BA8F4 /* SettingsViewController.swift */; };
+		988C342522EF156A004CE954 /* AbtoSipClientWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988C342422EF156A004CE954 /* AbtoSipClientWrapper.framework */; };
+		988C342722EF160E004CE954 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988C342622EF160E004CE954 /* CoreMedia.framework */; };
 		9895DEAB2211B20800AB2F46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895DEAA2211B20800AB2F46 /* AppDelegate.swift */; };
 		9895DEAD2211B20800AB2F46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895DEAC2211B20800AB2F46 /* ViewController.swift */; };
 		9895DEB02211B20800AB2F46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9895DEAE2211B20800AB2F46 /* Main.storyboard */; };
@@ -58,6 +67,7 @@
 		989FA335227B22E20077B228 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989FA334227B22E20077B228 /* AlertHelper.swift */; };
 		989FA3382281A2240077B228 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989FA3372281A2240077B228 /* PreviewViewController.swift */; };
 		98AFD1EC224910B8009EBA5B /* Calling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AFD1EB224910B7009EBA5B /* Calling.swift */; };
+		98B373782355B55900F91919 /* PortSIPVoIPSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987CE207224D1ACC001BA8F4 /* PortSIPVoIPSDK.framework */; };
 		98B6420922500B1D00EF7350 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6420822500B1C00EF7350 /* UIButton+Extensions.swift */; };
 		98B6420B22500B7D00EF7350 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6420A22500B7D00EF7350 /* UIImage+Extensions.swift */; };
 		98B6420D2250B8DC00EF7350 /* AdvancedLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6420C2250B8DC00EF7350 /* AdvancedLoginViewController.swift */; };
@@ -113,6 +123,7 @@
 		66FFCCCC5F0C85B2E8A6BA51 /* Pods-AfoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AfoneTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AfoneTests/Pods-AfoneTests.release.xcconfig"; sourceTree = "<group>"; };
 		6CFDE19514E601F97CC28F7C /* Pods-Automat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Automat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Automat/Pods-Automat.debug.xcconfig"; sourceTree = "<group>"; };
 		8EC4B4B3A77F8C6755EFC384 /* Pods-AutomatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutomatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutomatTests/Pods-AutomatTests.release.xcconfig"; sourceTree = "<group>"; };
+		980B7ACE22F99B5600DCD395 /* TwilioVoiceAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwilioVoiceAdapter.swift; sourceTree = "<group>"; };
 		98148FF622251EBF00AE22B4 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		981490152225C25900AE22B4 /* CallKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitManager.swift; sourceTree = "<group>"; };
 		981490172225C2C500AE22B4 /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
@@ -138,6 +149,13 @@
 		981A2D1F22BA7C0B006018A0 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		981A2D2122BBD220006018A0 /* Elevator-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Elevator-music.mp3"; sourceTree = "<group>"; };
 		981BE02322C3B42900787B5C /* PhoneNumberNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberNormalizer.swift; sourceTree = "<group>"; };
+		9833D94022E839FE00262565 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		9833D94222E83A1800262565 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9833D94422E83A2500262565 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9833D94622E83A3200262565 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9833D94822E83A4500262565 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9833D96B22E83B0000262565 /* Afone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Afone-Bridging-Header.h"; sourceTree = "<group>"; };
+		9861613022E726DA00FACDE9 /* AbtoAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbtoAdapter.swift; sourceTree = "<group>"; };
 		987C8EC022660AEA00B8F4C1 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
 		987C8EC4226618C200B8F4C1 /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
 		987CE1F7224A8688001BA8F4 /* DependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyProvider.swift; sourceTree = "<group>"; };
@@ -147,6 +165,9 @@
 		987CE1FF224CB9E9001BA8F4 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		987CE201224CC44E001BA8F4 /* FormViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewLayout.swift; sourceTree = "<group>"; };
 		987CE203224CCC7A001BA8F4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		987CE207224D1ACC001BA8F4 /* PortSIPVoIPSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PortSIPVoIPSDK.framework; sourceTree = "<group>"; };
+		988C342422EF156A004CE954 /* AbtoSipClientWrapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AbtoSipClientWrapper.framework; sourceTree = "<group>"; };
+		988C342622EF160E004CE954 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		9895DEA72211B20800AB2F46 /* Afone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Afone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9895DEAA2211B20800AB2F46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9895DEAC2211B20800AB2F46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -219,12 +240,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				988C342722EF160E004CE954 /* CoreMedia.framework in Frameworks */,
+				9833D94922E83A4500262565 /* libz.tbd in Frameworks */,
+				9833D94722E83A3200262565 /* SystemConfiguration.framework in Frameworks */,
+				9833D94522E83A2500262565 /* CoreGraphics.framework in Frameworks */,
+				9833D94322E83A1800262565 /* AudioToolbox.framework in Frameworks */,
+				9833D94122E839FF00262565 /* Accelerate.framework in Frameworks */,
 				98DDAC98222D04B100313C7C /* libresolv.tbd in Frameworks */,
 				98DDAC96222D04A900313C7C /* libc++.tbd in Frameworks */,
 				981490242225C3C800AE22B4 /* PushKit.framework in Frameworks */,
 				981490222225C3BA00AE22B4 /* GLKit.framework in Frameworks */,
 				981490202225C3B300AE22B4 /* VideoToolbox.framework in Frameworks */,
+				98B373782355B55900F91919 /* PortSIPVoIPSDK.framework in Frameworks */,
 				9814901E2225C3A300AE22B4 /* MetalKit.framework in Frameworks */,
+				988C342522EF156A004CE954 /* AbtoSipClientWrapper.framework in Frameworks */,
 				9814901C2225C39A00AE22B4 /* CoreAudio.framework in Frameworks */,
 				9814901A2225C37F00AE22B4 /* AVFoundation.framework in Frameworks */,
 				E5ADC188CB4D0C1F1FE5AB6F /* Pods_Afone.framework in Frameworks */,
@@ -423,6 +452,9 @@
 			isa = PBXGroup;
 			children = (
 				9895DEE2221212E800AB2F46 /* PortSIPAdapter.swift */,
+				9861613022E726DA00FACDE9 /* AbtoAdapter.swift */,
+				9833D96B22E83B0000262565 /* Afone-Bridging-Header.h */,
+				980B7ACE22F99B5600DCD395 /* TwilioVoiceAdapter.swift */,
 			);
 			path = "VoIP Adapters";
 			sourceTree = "<group>";
@@ -447,8 +479,16 @@
 		FC29F5FCC4E22F7E21EE5C38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				988C342622EF160E004CE954 /* CoreMedia.framework */,
+				988C342422EF156A004CE954 /* AbtoSipClientWrapper.framework */,
+				9833D94822E83A4500262565 /* libz.tbd */,
+				9833D94622E83A3200262565 /* SystemConfiguration.framework */,
+				9833D94422E83A2500262565 /* CoreGraphics.framework */,
+				9833D94222E83A1800262565 /* AudioToolbox.framework */,
+				9833D94022E839FE00262565 /* Accelerate.framework */,
 				98DDAC97222D04B100313C7C /* libresolv.tbd */,
 				98DDAC95222D04A900313C7C /* libc++.tbd */,
+				987CE207224D1ACC001BA8F4 /* PortSIPVoIPSDK.framework */,
 				981490232225C3C800AE22B4 /* PushKit.framework */,
 				981490212225C3BA00AE22B4 /* GLKit.framework */,
 				9814901F2225C3B300AE22B4 /* VideoToolbox.framework */,
@@ -515,7 +555,7 @@
 				TargetAttributes = {
 					9895DEA62211B20700AB2F46 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1030;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -657,6 +697,7 @@
 			files = (
 				989FA33322773B950077B228 /* Permissions.swift in Sources */,
 				98DDAC9A222D0B6400313C7C /* DTMF.swift in Sources */,
+				980B7ACF22F99B5600DCD395 /* TwilioVoiceAdapter.swift in Sources */,
 				98B642182251F68C00EF7350 /* CheckmarkTableViewCell.swift in Sources */,
 				981490442226CAA200AE22B4 /* LoadableFromXibView.swift in Sources */,
 				98F93C3622573400006A4AAA /* Settings.swift in Sources */,
@@ -703,6 +744,7 @@
 				98B6422322524A4400EF7350 /* UITableView+Extensions.swift in Sources */,
 				98B6421B22520E5200EF7350 /* CellSelector.swift in Sources */,
 				981490162225C25900AE22B4 /* CallKitManager.swift in Sources */,
+				9861613122E726DA00FACDE9 /* AbtoAdapter.swift in Sources */,
 				9895DEDB22120F4E00AB2F46 /* VoIPProtocol.swift in Sources */,
 				98B6421D22522F9E00EF7350 /* AboutViewController.swift in Sources */,
 				98BACADC2289581F0011450D /* NSUserActivity+Extensions.swift in Sources */,
@@ -907,15 +949,18 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTLQJCXVMN;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Afone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -925,6 +970,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = berlin.automat.afon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Afone/VoIP Adapters/Afone-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -941,15 +987,18 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTLQJCXVMN;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Afone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -959,6 +1008,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = berlin.automat.afon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Afone/VoIP Adapters/Afone-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

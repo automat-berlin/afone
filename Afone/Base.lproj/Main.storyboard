@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="loT-fz-gBF">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="loT-fz-gBF">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +11,13 @@
         <!--Settings-->
         <scene sceneID="COh-qG-wwy">
             <objects>
-                <viewController title="Settings" id="wQ4-vb-fFl" customClass="SettingsViewController" customModule="Automat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Settings" id="wQ4-vb-fFl" customClass="SettingsViewController" customModule="Afone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yKi-lK-4jC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aVF-0n-1xZ">
-                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="619"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -37,7 +35,7 @@
                     <connections>
                         <outlet property="tableView" destination="aVF-0n-1xZ" id="dGs-5d-8Q4"/>
                         <outlet property="view" destination="yKi-lK-4jC" id="HNo-r7-gnZ"/>
-                        <segue destination="loT-fz-gBF" kind="showDetail" identifier="showLogin" customClass="AutomatDismissSegue" customModule="Automat" customModuleProvider="target" id="WRj-s2-QVV"/>
+                        <segue destination="loT-fz-gBF" kind="showDetail" identifier="showLogin" customClass="AutomatDismissSegue" customModule="Afone" customModuleProvider="target" id="WRj-s2-QVV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1hz-FR-tEw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -47,7 +45,7 @@
         <!--Call View Controller-->
         <scene sceneID="r3J-uc-ufp">
             <objects>
-                <viewController id="9lY-C2-ejz" customClass="CallViewController" customModule="Automat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9lY-C2-ejz" customClass="CallViewController" customModule="Afone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v0C-fK-Euh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,7 +55,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySq-bP-JRk" customClass="CallView" customModule="Automat" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySq-bP-JRk" customClass="CallView" customModule="Afone" customModuleProvider="target">
                                 <rect key="frame" x="8" y="44" width="359" height="734"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -94,13 +92,13 @@
         <!--Dialer-->
         <scene sceneID="OuX-wf-K4b">
             <objects>
-                <viewController id="9Nh-MQ-aYJ" customClass="DialerViewController" customModule="Automat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9Nh-MQ-aYJ" customClass="DialerViewController" customModule="Afone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BFc-uE-KB4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WKY-HZ-cBg" customClass="DialerView" customModule="Automat" customModuleProvider="target">
-                                <rect key="frame" x="8" y="52" width="359" height="669"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WKY-HZ-cBg" customClass="DialerView" customModule="Afone" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="359" height="659"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -125,7 +123,7 @@
         <!--View Controller-->
         <scene sceneID="0Rx-mr-FAr">
             <objects>
-                <tabBarController id="fiu-DZ-LYH" customClass="ViewController" customModule="Automat" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="fiu-DZ-LYH" customClass="ViewController" customModule="Afone" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="kkU-WZ-E8V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -135,7 +133,7 @@
                     <connections>
                         <segue destination="9Nh-MQ-aYJ" kind="relationship" relationship="viewControllers" id="NTm-Cm-yus"/>
                         <segue destination="oeg-sW-S5b" kind="relationship" relationship="viewControllers" id="bRD-nG-ux3"/>
-                        <segue destination="9lY-C2-ejz" kind="custom" identifier="showCallScreen" customClass="AutomatPresentSegue" customModule="Automat" customModuleProvider="target" id="3Rv-1f-WAb"/>
+                        <segue destination="9lY-C2-ejz" kind="custom" identifier="showCallScreen" customClass="AutomatPresentSegue" customModule="Afone" customModuleProvider="target" id="3Rv-1f-WAb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxB-h3-mba" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -145,13 +143,13 @@
         <!--Advanced-->
         <scene sceneID="lTW-od-P2K">
             <objects>
-                <viewController title="Advanced" id="yC3-Qa-ppM" customClass="AdvancedLoginViewController" customModule="Automat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Advanced" id="yC3-Qa-ppM" customClass="AdvancedLoginViewController" customModule="Afone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O0Q-zu-aZN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="vcG-6x-80T">
-                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="668"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -168,7 +166,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="checked" style="done" id="tUv-f5-sL9">
                             <color key="tintColor" red="0.1753313839" green="0.28242558239999999" blue="0.57899218799999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
-                                <segue destination="3kn-rA-oDD" kind="unwind" customClass="AutomatDismissSegue" customModule="Automat" customModuleProvider="target" unwindAction="dismissActionWithSegue:" id="tjr-S5-mpn"/>
+                                <segue destination="3kn-rA-oDD" kind="unwind" customClass="AutomatDismissSegue" customModule="Afone" customModuleProvider="target" unwindAction="dismissActionWithSegue:" id="tjr-S5-mpn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -185,32 +183,32 @@
         <!--About-->
         <scene sceneID="rkM-e7-HSG">
             <objects>
-                <viewController title="About" id="Wmg-20-gLW" customClass="AboutViewController" customModule="Automat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="About" id="Wmg-20-gLW" customClass="AboutViewController" customModule="Afone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wDm-DR-qJY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Lsa-vp-B9A">
-                                <rect key="frame" x="127.66666666666669" y="96" width="120" height="120"/>
+                                <rect key="frame" x="127.66666666666669" y="64" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="0Ds-Lu-gs8"/>
                                     <constraint firstAttribute="height" constant="120" id="DD8-Et-0qz"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tin-Qp-oa1">
-                                <rect key="frame" x="8" y="246" width="359" height="27"/>
+                                <rect key="frame" x="8" y="214" width="359" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="website" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIJ-sP-Efj">
-                                <rect key="frame" x="8" y="281" width="359" height="21"/>
+                                <rect key="frame" x="8" y="249" width="359" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e88-Cq-gov">
-                                <rect key="frame" x="8" y="740" width="359" height="18"/>
+                                <rect key="frame" x="8" y="686" width="359" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -247,16 +245,16 @@
         <!--Login View Controller-->
         <scene sceneID="RpN-1j-1mz">
             <objects>
-                <viewController id="loT-fz-gBF" customClass="LoginViewController" customModule="Automat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="loT-fz-gBF" customClass="LoginViewController" customModule="Afone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KPm-ic-gOh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfu-xd-vgC">
-                                <rect key="frame" x="8" y="52" width="359" height="718"/>
+                                <rect key="frame" x="8" y="8" width="359" height="708"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NZp-J3-1Bs">
-                                        <rect key="frame" x="8" y="430" width="343" height="280"/>
+                                        <rect key="frame" x="8" y="420" width="343" height="280"/>
                                         <subviews>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXA-I0-MzY">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="0.0"/>
@@ -272,16 +270,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Cjs-cj-mI4"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="username"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hvZ-68-HIf" customClass="ABSecureTextField" customModule="Automat" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hvZ-68-HIf" customClass="ABSecureTextField" customModule="Afone" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="96" width="343" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="IgI-7A-eBF"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
@@ -290,7 +286,6 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="JJr-6I-XhF"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="url"/>
                                             </textField>
@@ -310,7 +305,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="qc5-dG-cap" kind="presentation" customClass="AutomatPresentSegue" customModule="Automat" customModuleProvider="target" id="Onb-ta-iqr"/>
+                                                    <segue destination="qc5-dG-cap" kind="presentation" customClass="AutomatPresentSegue" customModule="Afone" customModuleProvider="target" id="Onb-ta-iqr"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -324,7 +319,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8c7-Iq-JrR">
-                                <rect key="frame" x="137.66666666666666" y="52" width="100" height="100"/>
+                                <rect key="frame" x="137.66666666666666" y="8" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="lDz-g8-OZ2"/>
                                     <constraint firstAttribute="width" constant="100" id="sn0-Uh-5B1"/>
@@ -357,7 +352,7 @@
                         <outlet property="sipServerField" destination="ctG-7M-S6t" id="TRu-RD-REc"/>
                         <outlet property="stackView" destination="NZp-J3-1Bs" id="TcT-Ws-UBs"/>
                         <outlet property="view" destination="KPm-ic-gOh" id="diD-BR-hou"/>
-                        <segue destination="fiu-DZ-LYH" kind="showDetail" identifier="showMainApp" customClass="AutomatPresentSegue" customModule="Automat" customModuleProvider="target" id="mPM-WS-m9K"/>
+                        <segue destination="fiu-DZ-LYH" kind="showDetail" identifier="showMainApp" customClass="AutomatPresentSegue" customModule="Afone" customModuleProvider="target" id="mPM-WS-m9K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPA-8g-vM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -375,7 +370,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qc5-dG-cap" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3EY-VR-ywa">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -395,7 +390,7 @@
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="8rA-QM-g1x">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

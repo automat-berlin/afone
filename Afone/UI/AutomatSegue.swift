@@ -39,6 +39,9 @@ class AutomatPresentSegue: UIStoryboardSegue {
         toViewController.view.transform = CGAffineTransform(scaleX: 3.25, y: 3.25)
         toViewController.view.center = center
         toViewController.view.alpha = 0.0
+        if #available(iOS 13.0, *) {
+            toViewController.modalPresentationStyle = .fullScreen
+        }
 
         container?.addSubview(toViewController.view)
 

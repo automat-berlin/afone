@@ -150,6 +150,8 @@ class SettingsViewController: BaseViewController {
         tableView.delegate = self
         tableView.dataSource = self
 
+        tableView.backgroundColor = .clear
+
         tableView.registerReusableCell(TextFieldTableViewCell.self)
         tableView.registerReusableCell(CheckmarkTableViewCell.self)
         tableView.registerReusableCell(UITableViewCell.self)
@@ -214,7 +216,7 @@ extension SettingsViewController: UITableViewDataSource {
         case .checkmark(let text, let accessoryType, transport: _, let srtp, action: _):
             let cell: CheckmarkTableViewCell = tableView.dequeueReusableCell(for: indexPath)
             cell.textLabel?.text = text
-            cell.backgroundColor = Constants.Color.automatBlue
+            cell.backgroundColor = .clear
             cell.textLabel?.textColor = .white
             cell.tintColor = .white
             var selected: [Codec] = [Codec]()
@@ -241,7 +243,7 @@ extension SettingsViewController: UITableViewDataSource {
         default:
             let cell: UITableViewCell = tableView.dequeueReusableCell(for: indexPath)
             cell.textLabel?.text = NSLocalizedString("Logout", comment: "")
-            cell.backgroundColor = Constants.Color.automatBlue
+            cell.backgroundColor = .clear
             cell.textLabel?.textColor = .white
 
             return cell

@@ -28,12 +28,50 @@ protocol BaseViewControllerProtocol {
 }
 
 class BaseViewController: UIViewController, BaseViewControllerProtocol {
-
     var dependencyProvider: DependencyProvider {
-            return (UIApplication.shared.delegate as! AppDelegate).dependencyProvider
+        return (UIApplication.shared.delegate as! AppDelegate).dependencyProvider
+    }
+
+    var allowUserInterfaceStyleChanges: Bool {
+        return true
+    }
+
+    var darkModeBackgroundColor: UIColor? {
+        return Constants.Color.automatDarkBlue
+    }
+    var lightModeBackgroundColor: UIColor? {
+        return Constants.Color.automatBlue
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        setupUserInterfaceStyle()
+    }
+
+    private func setupUserInterfaceStyle() {
+        guard let darkModeBackgroundColor = darkModeBackgroundColor,
+            let lightModeBackgroundColor = lightModeBackgroundColor,
+            allowUserInterfaceStyleChanges == true else {
+                return
+        }
+
+        if #available(iOS 13.0, *) {
+            if traitCollection.userInterfaceStyle == .dark {
+                view.backgroundColor = darkModeBackgroundColor
+            } else {
+                view.backgroundColor = lightModeBackgroundColor
+            }
+        }
+    }
+
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+
+        setupUserInterfaceStyle()
     }
 }

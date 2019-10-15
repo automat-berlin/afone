@@ -40,6 +40,10 @@ class LoginViewController: BaseViewController {
 
     private var formViewLayout: FormViewLayout?
 
+    override var allowUserInterfaceStyleChanges: Bool {
+        return false
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -39,6 +39,14 @@ class AdvancedLoginViewController: BaseViewController {
 
     private var formViewLayout: FormViewLayout?
 
+    override var darkModeBackgroundColor: UIColor? {
+        return .black
+    }
+
+    override var lightModeBackgroundColor: UIColor? {
+        return .white
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

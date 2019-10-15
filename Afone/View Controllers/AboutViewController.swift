@@ -30,6 +30,14 @@ class AboutViewController: BaseViewController {
     @IBOutlet private weak var websiteLinkLabel: UILabel!
     @IBOutlet private weak var copyrightLabel: UILabel!
 
+    override var darkModeBackgroundColor: UIColor? {
+        return .black
+    }
+
+    override var lightModeBackgroundColor: UIColor? {
+        return .white
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
