@@ -151,6 +151,7 @@ class PortSIPAdapter: NSObject {
 
      - Parameter completion: The block to execute after the PortSIP SDK registered with a server.
      */
+
     func register(completion: @escaping (NSError?) -> Void) {
         registerCompletion = completion
         let status = sipSDK.registerServer(Constants.SIP.sipRegistrationRefreshSeconds, retryTimes: Constants.SIP.sipRegistrationRetry)
@@ -324,6 +325,11 @@ extension PortSIPAdapter: VoIPManagerDelegate {
     func logout(completion: (() -> Void)?) {
         uninitialize()
         completion?()
+    }
+
+    func cancelLogin() {
+        registerCompletion = nil
+        uninitialize()
     }
 
     func didEnterBackground() {

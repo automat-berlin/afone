@@ -160,6 +160,10 @@ class AbtoAdapter: NSObject {
 }
 
 extension AbtoAdapter: VoIPManagerDelegate {
+    func cancelLogin() {
+        
+    }
+
     func answerCall(_ sessionId: Int, videoCall: Bool, completion: (NSError?) -> Void) {
         var error: NSError?
 

@@ -90,6 +90,7 @@ class LoginViewController: BaseViewController {
         }
 
         setUIElementsEnabled(false)
+        changeLoginButtonToCancel()
 
         errorLabel.text = nil
         errorLabel.isHidden = true
@@ -122,8 +123,27 @@ extension LoginViewController {
     }
 
     private func setUIElementsEnabled(_ isEnabled: Bool) {
-        for control in [loginField, passwordField, sipServerField, loginButton, advancedButton] {
+        for control in [loginField, passwordField, sipServerField, advancedButton] {
             control?.isEnabled = isEnabled
         }
+    }
+
+    private func changeLoginButtonToCancel() {
+        loginButton.setTitle(NSLocalizedString("Cancel", comment: ""), for: .normal)
+        loginButton.removeTarget(self, action: nil, for: .allEvents)
+        loginButton.addTarget(self, action: #selector(cancelLogin), for: .touchUpInside)
+    }
+
+    private func changeCancelButtonToLogin() {
+        loginButton.setTitle(NSLocalizedString("Login", comment: ""), for: .normal)
+        loginButton.removeTarget(self, action: nil, for: .allEvents)
+        loginButton.addTarget(self, action: #selector(login), for: .touchUpInside)
+    }
+
+    @objc private func cancelLogin() {
+        dependencyProvider.voipManager.cancelLogin()
+        changeCancelButtonToLogin()
+        activityIndicator.stopAnimating()
+        setUIElementsEnabled(true)
     }
 }

@@ -94,6 +94,9 @@ class TwilioVoiceAdapter: NSObject {
 // MARK: - VoIPManagerDelegate
 
 extension TwilioVoiceAdapter: VoIPManagerDelegate {
+    func cancelLogin() {
+
+    }
 
     var supportsVideo: Bool {
         return false

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		476896B60538263DC415278B /* Pods_AfoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9D829617F42E9824CA39C0 /* Pods_AfoneTests.framework */; };
-		980B7ACF22F99B5600DCD395 /* TwilioVoiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980B7ACE22F99B5600DCD395 /* TwilioVoiceAdapter.swift */; };
 		98148FF722251EBF00AE22B4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98148FF622251EBF00AE22B4 /* String+Extensions.swift */; };
 		981490162225C25900AE22B4 /* CallKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981490152225C25900AE22B4 /* CallKitManager.swift */; };
 		981490182225C2C500AE22B4 /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981490172225C2C500AE22B4 /* AudioSessionManager.swift */; };
@@ -36,7 +35,6 @@
 		9833D94522E83A2500262565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9833D94422E83A2500262565 /* CoreGraphics.framework */; };
 		9833D94722E83A3200262565 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9833D94622E83A3200262565 /* SystemConfiguration.framework */; };
 		9833D94922E83A4500262565 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9833D94822E83A4500262565 /* libz.tbd */; };
-		9861613122E726DA00FACDE9 /* AbtoAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9861613022E726DA00FACDE9 /* AbtoAdapter.swift */; };
 		987C8EC122660AEA00B8F4C1 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987C8EC022660AEA00B8F4C1 /* CallViewController.swift */; };
 		987C8EC5226618C200B8F4C1 /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987C8EC4226618C200B8F4C1 /* CallView.swift */; };
 		987CE1F8224A8688001BA8F4 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987CE1F7224A8688001BA8F4 /* DependencyProvider.swift */; };
@@ -697,7 +695,6 @@
 			files = (
 				989FA33322773B950077B228 /* Permissions.swift in Sources */,
 				98DDAC9A222D0B6400313C7C /* DTMF.swift in Sources */,
-				980B7ACF22F99B5600DCD395 /* TwilioVoiceAdapter.swift in Sources */,
 				98B642182251F68C00EF7350 /* CheckmarkTableViewCell.swift in Sources */,
 				981490442226CAA200AE22B4 /* LoadableFromXibView.swift in Sources */,
 				98F93C3622573400006A4AAA /* Settings.swift in Sources */,
@@ -744,7 +741,6 @@
 				98B6422322524A4400EF7350 /* UITableView+Extensions.swift in Sources */,
 				98B6421B22520E5200EF7350 /* CellSelector.swift in Sources */,
 				981490162225C25900AE22B4 /* CallKitManager.swift in Sources */,
-				9861613122E726DA00FACDE9 /* AbtoAdapter.swift in Sources */,
 				9895DEDB22120F4E00AB2F46 /* VoIPProtocol.swift in Sources */,
 				98B6421D22522F9E00EF7350 /* AboutViewController.swift in Sources */,
 				98BACADC2289581F0011450D /* NSUserActivity+Extensions.swift in Sources */,
@@ -948,6 +944,7 @@
 				CODE_SIGN_ENTITLEMENTS = Afone/Afone.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = MTLQJCXVMN;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -986,6 +983,7 @@
 				CODE_SIGN_ENTITLEMENTS = Afone/Afone.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = MTLQJCXVMN;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

@@ -51,6 +51,10 @@
 "TLS Certificate" = "TLS Certificate";
 "About" = "About";
 
+// Login
+
+"Login" = "Login";
+
 // Call States
 "unknown" = "unknown";
 "initialized" = "initialized";

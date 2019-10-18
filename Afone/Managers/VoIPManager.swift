@@ -125,6 +125,11 @@ protocol VoIPManagerDelegate: class {
     func logout(completion: (() -> Void)?)
 
     /**
+    Cancels the login process
+     */
+    func cancelLogin()
+
+    /**
      Called when settings changed and should be reloaded.
 
      - Parameter settings: The settings which should be reloaded.
@@ -259,6 +264,10 @@ extension VoIPManager {
 
     func logout(completion: (() -> Void)?) {
         delegate?.logout(completion: completion)
+    }
+
+    func cancelLogin() {
+        delegate?.cancelLogin()
     }
 
     var audioCodecs: [Codec]? {

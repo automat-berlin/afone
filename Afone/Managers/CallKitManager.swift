@@ -69,9 +69,8 @@ class CallKitManager: NSObject {
 }
 
 extension CallKitManager: CXProviderDelegate {
-
     func providerDidReset(_ provider: CXProvider) {
-        requestEndCall(completion: nil)
+        activeCall = nil
     }
 
     func provider(_ provider: CXProvider, perform action: CXStartCallAction) {
@@ -120,6 +119,7 @@ extension CallKitManager: CXProviderDelegate {
             })
         } else if activeCall.callState == .terminated && activeCall.isHungUpRemotely {
             provider.reportCall(with: activeCall.uuid, endedAt: nil, reason: .remoteEnded)
+            self.activeCall = nil
         } else {
             activeCall.reject(completion: { [weak self] (error: Error?) in
                 if error != nil {
@@ -261,9 +261,7 @@ extension CallKitManager: CallDelegate {
             guard call.isHungUpRemotely else {
                 return
             }
-            requestEndCall { [weak self] (_) in
-                self?.provider.invalidate()
-            }
+            requestEndCall(completion: nil)
         case .talking:
             provider.reportOutgoingCall(with: call.uuid, connectedAt: nil)
         default:
@@ -304,7 +302,6 @@ extension CallKitManager {
                 DDLogError("Error while requesting call start: \(String(describing: error?.localizedDescription)).")
 
                 AudioSessionManager.configureAudioSession(type: .restore)
-                self?.provider.invalidate()
             }
 
             completion(error)
