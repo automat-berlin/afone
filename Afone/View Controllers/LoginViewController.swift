@@ -103,6 +103,8 @@ class LoginViewController: BaseViewController {
         dependencyProvider.voipManager.initAdapter(credentials: dependencyProvider.credentials) { [weak self] (error) in
             self?.activityIndicator.stopAnimating()
             self?.setUIElementsEnabled(true)
+            self?.changeCancelButtonToLogin()
+
             if error == nil {
                 self?.performSegue(withIdentifier: "showMainApp", sender: self)
                 self?.dependencyProvider.keychainManager.credentials = self?.dependencyProvider.credentials

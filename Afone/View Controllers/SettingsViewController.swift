@@ -131,6 +131,14 @@ class SettingsViewController: BaseViewController {
             sections.append(srtpOptionsSection)
         }
 
+        let appearanceSection = Section(title: NSLocalizedString("Appearance", comment: ""), items: [
+            .link(text: NSLocalizedString("App icon", comment: ""), accessoryType: .disclosureIndicator, action: { [weak self] in
+                self?.performSegue(withIdentifier: "showAlternateIcons", sender: self)
+            })
+        ])
+
+        sections.append(appearanceSection)
+
         let accountSection = Section(title: String(format: NSLocalizedString("Account - %@", comment: ""), dependencyProvider.credentials.login ?? ""), items: [
             .link(text: NSLocalizedString("Logout", comment: ""), action: { [weak self] in
                 self?.logout()
@@ -188,7 +196,7 @@ extension SettingsViewController: UITableViewDelegate {
             }
             action()
             saveSettings()
-        case .link(_, let action):
+        case .link(_, _, _, let action):
             action()
         default:
             break
@@ -240,9 +248,23 @@ extension SettingsViewController: UITableViewDataSource {
                 break
             }
             return cell
+        case .link(let text, _, let accessoryType, action: _):
+            let cell: UITableViewCell = tableView.dequeueReusableCell(for: indexPath)
+            cell.textLabel?.text = NSLocalizedString(text, comment: "")
+            cell.tintColor = .white
+            cell.backgroundColor = .clear
+            cell.textLabel?.textColor = .white
+            cell.accessoryType = accessoryType
+            if accessoryType == .disclosureIndicator {
+                let chevronImage = UIImage(named: "chevron")
+                cell.accessoryView = UIImageView(image: chevronImage)
+            }
+
+            return cell
+
         default:
             let cell: UITableViewCell = tableView.dequeueReusableCell(for: indexPath)
-            cell.textLabel?.text = NSLocalizedString("Logout", comment: "")
+            cell.textLabel?.text = NSLocalizedString("Unknown cell", comment: "")
             cell.backgroundColor = .clear
             cell.textLabel?.textColor = .white
 

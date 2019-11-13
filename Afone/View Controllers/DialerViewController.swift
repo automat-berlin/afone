@@ -152,7 +152,7 @@ class DialerViewController: BaseViewController, DialerViewDelegate {
                     return
             }
 
-            guard self?.areAudioCodecsEmpty == false else {
+            guard self?.dependencyProvider.areAudioCodecsEmpty == false else {
                 DispatchQueue.main.async {
                     self?.dialerView.isCallEnabled = true
                     AlertHelper.showNoCodecsAlert(on: self)
@@ -169,17 +169,6 @@ class DialerViewController: BaseViewController, DialerViewDelegate {
                 }
             }
         }
-    }
-}
-
-// MARK: Codecs
-
-extension DialerViewController {
-    var areAudioCodecsEmpty: Bool {
-        if dependencyProvider.voipManager.needsCodecs == false {
-            return false
-        }
-        return dependencyProvider.settings.codecs.filter { $0.type == .audio }.isEmpty
     }
 }
 

@@ -84,3 +84,14 @@ extension DependencyProvider {
         voipManager.reload(with: settings)
     }
 }
+
+// MARK: Codecs
+extension DependencyProvider {
+    var areAudioCodecsEmpty: Bool {
+        if voipManager.needsCodecs == false {
+            return false
+        }
+        return settings.codecs.filter { $0.type == .audio }.isEmpty
+    }
+}
+

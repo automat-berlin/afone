@@ -27,7 +27,7 @@ class AlertHelper {
 
     static func showPermissionsAlert(on viewController: UIViewController?) {
         let title = NSLocalizedString("Missing Permissions", comment: "")
-        let message = NSLocalizedString("In order to make a call you need to grant Automat access to the microphone and camera. Please go to Settings to do so.", comment: "")
+        let message = NSLocalizedString("In order to make a call you need to grant //afone access to the microphone and camera. Please go to Settings to do so.", comment: "")
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
 
         let settingsAction = UIAlertAction(title: NSLocalizedString("Settings", comment: ""), style: .default) { _ in
@@ -42,7 +42,7 @@ class AlertHelper {
         viewController?.present(alertController, animated: true, completion: nil)
     }
 
-    private static func openSettings() {
+    static func openSettings() {
         guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else { return }
         UIApplication.shared.open(settingsURL)
     }
@@ -78,5 +78,23 @@ class AlertHelper {
 
         viewController?.present(alertController, animated: true, completion: nil)
 
+    }
+
+    static func showPhoneNumberSheet(on viewController: UIViewController, phoneNumbers: [String], completion: ((String) -> Void)?) {
+        let title = NSLocalizedString("Phone numbers", comment: "")
+        let message = NSLocalizedString("Which phone number would you like to call?", comment: "")
+        let actionSheet = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+
+        _ = phoneNumbers.map({ number in
+            let action = UIAlertAction(title: number, style: .default) { _ in
+                completion?(number)
+            }
+            actionSheet.addAction(action)
+        })
+
+        let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel, handler: nil)
+        actionSheet.addAction(cancelAction)
+
+        viewController.present(actionSheet, animated: true, completion: nil)
     }
 }

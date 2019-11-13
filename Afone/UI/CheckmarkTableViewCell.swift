@@ -24,14 +24,14 @@
 import UIKit
 
 class CheckmarkTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
     override func prepareForReuse() {
         super.prepareForReuse()
         accessoryType = .none
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+
+        imageView?.frame = CGRect(x: 8, y: 8, width: 50, height: 50)
     }
 }

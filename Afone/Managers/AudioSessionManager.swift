@@ -50,7 +50,7 @@ class AudioSessionManager {
             }
 
             do {
-                try audioSession.setCategory(category, mode: mode, options: .mixWithOthers)
+                try audioSession.setCategory(category, mode: mode, options: .allowBluetooth)
             } catch {
                 DDLogError("🔊 Error while setting audio session category: \(String(describing: error.localizedDescription)).")
             }

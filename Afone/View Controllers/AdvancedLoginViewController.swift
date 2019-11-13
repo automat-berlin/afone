@@ -101,7 +101,7 @@ class AdvancedLoginViewController: BaseViewController {
                 .toggle(dataSource: TLSDataSource(dependencyProvider: dependencyProvider))
                 ]),
             Section(title: NSLocalizedString("About", comment: ""), items: [
-                    .link(text: NSLocalizedString("About", comment: ""), action: { [weak self] in
+                .link(text: NSLocalizedString("About", comment: ""), accessoryType: .disclosureIndicator, action: { [weak self] in
                         self?.performSegue(withIdentifier: "advancedShowAbout", sender: self)
                     })
                 ])
@@ -154,7 +154,7 @@ extension AdvancedLoginViewController: UITableViewDelegate {
         switch item {
         case .checkmark(_, _, _, _, let action):
             action()
-        case .link(_, let action):
+        case .link(_, _, _, let action):
             action()
         default:
             break
@@ -226,15 +226,19 @@ extension AdvancedLoginViewController: UITableViewDataSource {
                 cellSelector.selectCell(cell)
             }
             return cell
-        case .link(let text, action: _):
+        case .link(let text, _, let accessoryType, action: _):
             let cell: UITableViewCell = tableView.dequeueReusableCell(for: indexPath)
             cell.textLabel?.text = text
-            cell.accessoryType = .disclosureIndicator
+            cell.accessoryType = accessoryType
             return cell
         case .toggle(let dataSource):
             let cell: SwitchTableViewCell = tableView.dequeueReusableCell(for: indexPath)
             cell.dataSource = dataSource
             cell.toggleColor = Constants.Color.automatBlue
+            return cell
+        default:
+            let cell: UITableViewCell = tableView.dequeueReusableCell(for: indexPath)
+            cell.textLabel?.text = NSLocalizedString("Unknown cell", comment: "")
             return cell
         }
     }

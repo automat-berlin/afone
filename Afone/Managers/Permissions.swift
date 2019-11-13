@@ -24,6 +24,7 @@
 import UIKit
 import UserNotifications
 import AVFoundation
+import Contacts
 
 enum CallPermission {
     case audio
@@ -113,15 +114,34 @@ class Permissions {
     }
 
     static func isCameraPermissionAuthorized() -> Bool {
-        let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
-        return cameraAuthorizationStatus != .denied
+        AVCaptureDevice.authorizationStatus(for: AVMediaType.video) != .denied
     }
 
     static var isMicrophonePermissionDenied: Bool {
-        return AVCaptureDevice.authorizationStatus(for: .audio) == .denied
+        AVCaptureDevice.authorizationStatus(for: .audio) == .denied
     }
 
     static var isMicrophonePermissionAuthorized: Bool {
-        return AVCaptureDevice.authorizationStatus(for: .audio) == .authorized
+        AVCaptureDevice.authorizationStatus(for: .audio) == .authorized
+    }
+
+    // MARK: Contact Permissions
+    static var isContactPermissionAuthorized: Bool {
+        CNContactStore.authorizationStatus(for: .contacts) == .authorized
+    }
+
+    static var isContactPermissionRejected: Bool {
+        CNContactStore.authorizationStatus(for: .contacts) == .denied
+    }
+
+    static var isContactPermissionNotDetermined: Bool {
+        CNContactStore.authorizationStatus(for: .contacts) == .notDetermined
+    }
+
+    static func requestContactPermission(completionHandler: @escaping (Bool, Error?) -> Void) {
+        let contactStore = CNContactStore()
+        contactStore.requestAccess(for: .contacts) { (granted, error) in
+            completionHandler(granted, error)
+        }
     }
 }

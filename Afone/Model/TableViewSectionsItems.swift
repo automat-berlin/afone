@@ -26,7 +26,8 @@ import UIKit
 enum Item {
     case textField(text: String?, placeholder: String?, action: (((String) -> Void)))
     case checkmark(text: String?, accessoryType: UITableViewCell.AccessoryType, transport: Transport?, srtp: SRTP.SrtpPolicyType?, action: (() -> Void))
-    case link(text: String, action: (() -> Void))
+    case imageCheckmark(text: String?, accessoryType: UITableViewCell.AccessoryType, image: UIImage?, action: (() -> Void))
+    case link(text: String, detailText: String? = nil, accessoryType: UITableViewCell.AccessoryType = .none, action: (() -> Void))
     case toggle(dataSource: ToggleItemDataSource?)
 }
 

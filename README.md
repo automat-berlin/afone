@@ -2,7 +2,7 @@
     <img src="https://automat.berlin/images/logo-automat.svg" alt="Automat">
 </div>
 
-[![Release v1.2](https://img.shields.io/badge/Release-v1.2-brightgreen.svg)](https://github.com/automat-berlin/afone/releases/)
+[![Release v1.3](https://img.shields.io/badge/Release-v1.3-brightgreen.svg)](https://github.com/automat-berlin/afone/releases/)
 ![Xcode 10.2+](https://img.shields.io/badge/Xcode-10.2%2B-blue.svg)
 ![Swift 5.0+](https://img.shields.io/badge/Swift-5.0%2B-orange.svg)
 ![iOS 12.1+](https://img.shields.io/badge/iOS-12.1%2B-blue.svg)
@@ -43,6 +43,9 @@
 - [x] Background Connectivity
 - [x] User-friendly Animations & Feedback
 - [x] Brand / CI Customization
+- [x] Contact list with search and index scrolling
+- [x] Alternative App icon support
+- [x] Dark mode support on iOS 13
 
 ## Usage
 
@@ -60,6 +63,10 @@ In case you need to customize the application to your environment, tap **Advance
 
 Enter a phone number and make a call. You can tap on delete to revert your input.
 
+<img src="Documentation/Screenshots/contacts.png" alt="Dialer" width="414">
+
+You can also show your local contact list and have an easier way to call your friends and business contacts.
+
 <img src="Documentation/Screenshots/call.png" alt="Call Screen" width="414">
 
 //afone’s call interface supports all standard features. While making a call you can mute it, put it on the speaker, switch to a video call and switch the device camera. You can also tap on the **Keypad** button to enter DTMF signals.
@@ -67,6 +74,10 @@ Enter a phone number and make a call. You can tap on delete to revert your input
 <img src="Documentation/Screenshots/settings.png" alt="Adapter Settings" width="414">
 
 In the **Settings** screen you can configure audio & video codecs, SRTP. You can also log out. The application will let you log in again afterwards.
+
+<img src="Documentation/Screenshots/alt-icons.png" alt="Adapter Settings" width="414">
+
+In the **Settings** screen under *Appearance* you can change the App icon. We provide three different app icons to chose from.
 
 ## Installation
 
@@ -119,6 +130,12 @@ var remoteVideoView: UIView? { get }
 ```
 
 Return your remote video view here, which should be provided by your VoIP SDK.
+
+```swift
+var needsCodecs: Bool { get }
+```
+
+Indicate whether the user needs to choose audio codecs in order to make a call
 
 ### Delegation
 
@@ -174,6 +191,10 @@ Reestablish connection to your backend here, to be able to receive and make call
 
 ```swift
 func logout(completion: (() -> Void)?)
+```
+
+```swift
+func cancelLogin()
 ```
 
 ```swift

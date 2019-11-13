@@ -67,7 +67,7 @@
 
 // Alert Helper
 "Missing Permissions" = "Missing Permissions";
-"In order to make a call you need to grant Automat access to the microphone and camera. Please go to Settings to do so." = "In order to make a call you need to grant Automat access to the microphone and camera. Please go to Settings to do so.";
+"In order to make a call you need to grant //afone access to the microphone and camera. Please go to Settings to do so." = "In order to make a call you need to grant Automat access to the microphone and camera. Please go to Settings to do so.";
 "Settings" = "Settings";
 "Cancel" = "Cancel";
 "No codecs selected" = "No codecs selected";
@@ -83,3 +83,16 @@
 // LocalNotificationManager
 "%@ tried to reach you" = "%@ tried to reach you";
 "Due to missing microphone and camera permissions, the call was rejected automatically." = "Due to missing microphone and camera permissions, the call was rejected automatically.";
+
+// Appearance
+"Appearance" = "Appearance";
+"App icon" = "App icon";
+
+// Misc
+"Unknown cell" = "Unknown cell";
+
+// Contacts
+"In order to show a list of your contacts you need to grant //afone access to your contacts. Please go to Settings to do so." = "In order to show a list of your contacts you need to grant //afone access to your contacts. Please go to Settings to do so.";
+"Open Settings" = "Open Settings";
+"Phone numbers" = "Phone numbers";
+"Which phone number would you like to call?" = "Which phone number would you like to call?";
